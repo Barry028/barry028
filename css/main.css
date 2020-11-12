@@ -12441,6 +12441,34 @@ select::-ms-expand {
   background: #3BC9DB;
 }
 
+#filters {
+  margin: 1rem 0 0;
+  list-style: none;
+}
+
+#filters li {
+  float: left;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#filters li span {
+  display: block;
+  padding: .25rem 1.25rem;
+  text-decoration: none;
+  color: #868E96;
+  cursor: pointer;
+}
+
+#filters li span.active {
+  background: #3BC9DB;
+  color: #fff;
+}
+
+#filters li span:hover {
+  color: #3BC9DB;
+}
+
 #portfoliolist {
   font-size: 0;
 }
@@ -12531,34 +12559,6 @@ select::-ms-expand {
   margin-bottom: .5rem;
 }
 
-#filters {
-  margin: 1rem 0 0;
-  list-style: none;
-}
-
-#filters li {
-  float: left;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-#filters li span {
-  display: block;
-  padding: .25rem 1.25rem;
-  text-decoration: none;
-  color: #868E96;
-  cursor: pointer;
-}
-
-#filters li span.active {
-  background: #3BC9DB;
-  color: #fff;
-}
-
-#filters li span:hover {
-  color: #3BC9DB;
-}
-
 /*  page about
 ----------------------------------------  */
 .re-main-cnt {
@@ -12572,11 +12572,6 @@ select::-ms-expand {
   border-bottom: 0;
 }
 
-.re-main-cnt.active {
-  margin-left: 0;
-  width: 100%;
-}
-
 @media all and (max-width: 768px) {
   .re-main-cnt {
     margin-left: 0;
@@ -12586,7 +12581,7 @@ select::-ms-expand {
 
 .re-main-cnt .re-about {
   padding: 4rem 2rem;
-  background: url("../img/coded-stuff-screen.jpg");
+  background: url("../dist/img/coded-stuff-screen.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
