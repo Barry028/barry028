@@ -8,7 +8,7 @@
     <title>BarrY 的履歷</title>
     <!-- iCon  -->
     <link rel="stylesheet" type="text/css" href="vendor/BarryFont-v1.0/style.css">
-    <link rel="stylesheet" type="text/css" href="vendor/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/sweetalert2/dist/sweetalert2.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
     <!-- CSS  -->
@@ -18,6 +18,32 @@
         <script src="vender/respond/dest/respond.min.js"></script>
         <script src="vender/Placeholders/dist/placeholders.jquery.min.js"></script>
     <![endif]-->
+    <script>
+    (function(d) {
+        var config = {
+                kitId: 'ehi1irv',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement,
+            t = setTimeout(function() { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout),
+            tk = d.createElement("script"),
+            f = false,
+            s = d.getElementsByTagName("script")[0],
+            a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try { Typekit.load(config) } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+    </script>
 </head>
 
 <body>
@@ -71,12 +97,15 @@
             <div class="mask mask_dark--80"></div>
             <div class="container-fluid">
                 <div class="row">
-                    <h1 data-text="Hello，我是 BarrY">Hello，我是 BarrY.</h1>
-                    <h2>UI / UX設計 <font>｜</font> 網站企劃</h2>
-                    <p>
-                        6年 Ui / Ux設計以及網站規劃經驗，
-                        雙系統 App 設計、網站規劃、網站設計、Ui/Ux設計、響應式網站設計/切版、Scss/Sass，熟悉 Float 排版。
-                    </p>
+                    <img src="dist/img/me.JPG" alt="Barry">
+                    <div class="about-cnt">
+                        <h1 data-text="Hello，我是 BarrY">Hello，我是 BarrY.</h1>
+                        <h2>UI / UX設計 <font>｜</font> 網站企劃</h2>
+                        <p>
+                            6年 Ui / Ux設計以及網站規劃經驗，
+                            雙系統 App 設計、網站規劃、網站設計、Ui/Ux設計、響應式網站設計/切版、Scss/Sass，熟悉 Float 排版。
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
