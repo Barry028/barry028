@@ -3,58 +3,58 @@
 
     $('#recruit').on('click', function() {
         Swal.fire({
-            imageUrl: 'img/portfollo/recruit-f.png',
+            imageUrl: 'dist/img/portfollo/recruit-f.png',
             showConfirmButton: false,
         })
     });
     $('#membercenter').on('click', function() {
         Swal.fire({
-            imageUrl: 'img/portfollo/membercenter-f.png',
+            imageUrl: 'dist/img/portfollo/membercenter-f.png',
             showConfirmButton: false,
         })
     });
 
     $('#vacancy').on('click', function() {
         Swal.fire({
-            imageUrl: 'img/portfollo/vacancy-f.png',
+            imageUrl: 'dist/img/portfollo/vacancy-f.png',
             showConfirmButton: false,
         })
     });
 
     $('#hr').on('click', function() {
         Swal.fire({
-            imageUrl: 'img/portfollo/hr-f.png',
+            imageUrl: 'dist/img/portfollo/hr-f.png',
             showConfirmButton: false,
         })
     });
     $('#123share').on('click', function() {
         Swal.fire({
-            html: '<img class="img-responsive" src="img/portfollo/123Share-1.png" alt="123 SHare App ReDesign"><img class="img-responsive" src="img/portfollo/123Share-2.png" alt="123 SHare App ReDesign"><img class="img-responsive" src="img/portfollo/123Share-3.png" alt="123 SHare App ReDesign">',
+            html: '<img class="img-responsive" src="dist/img/portfollo/123Share-1.png" alt="123 SHare App ReDesign"><img class="img-responsive" src="dist/img/portfollo/123Share-2.png" alt="123 SHare App ReDesign"><img class="img-responsive" src="dist/img/portfollo/123Share-3.png" alt="123 SHare App ReDesign">',
             showConfirmButton: false,
         })
     });
     $('#coupon').on('click', function() {
         Swal.fire({
-            html: '<img class="img-responsive" src="img/portfollo/ifansCouPon-1.png" alt="瘋折扣 App ReDesign"><img class="img-responsive" src="img/portfollo/ifansCouPon-2.png" alt="瘋折扣 App ReDesign"><img class="img-responsive" src="img/portfollo/ifansCouPon-3.png" alt="瘋折扣 App ReDesign">',
+            html: '<img class="img-responsive" src="dist/img/portfollo/ifansCouPon-1.png" alt="瘋折扣 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/ifansCouPon-2.png" alt="瘋折扣 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/ifansCouPon-3.png" alt="瘋折扣 App ReDesign">',
             showConfirmButton: false,
         })
     });
     $('#market').on('click', function() {
         Swal.fire({
-            html: '<img class="img-responsive" src="img/portfollo/market-1.png" alt="瘋市場 App ReDesign"><img class="img-responsive" src="img/portfollo/market-2.png" alt="瘋市場 App ReDesign"><img class="img-responsive" src="img/portfollo/market-3.png" alt="瘋市場 App ReDesign">',
+            html: '<img class="img-responsive" src="dist/img/portfollo/market-1.png" alt="瘋市場 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/market-2.png" alt="瘋市場 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/market-3.png" alt="瘋市場 App ReDesign">',
             showConfirmButton: false,
         })
     });
 
     $('#myweb').on('click', function() {
         Swal.fire({
-            html: '<img class="img-responsive" src="img/portfollo/MyWeb-1.png" alt="MyWeb App ReDesign"><img class="img-responsive" src="img/portfollo/MyWeb-2.png" alt="MyWeb App ReDesign"><img class="img-responsive" src="img/portfollo/MyWeb-3.png" alt="MyWeb App ReDesign">',
+            html: '<img class="img-responsive" src="dist/img/portfollo/MyWeb-1.png" alt="MyWeb App ReDesign"><img class="img-responsive" src="dist/img/portfollo/MyWeb-2.png" alt="MyWeb App ReDesign"><img class="img-responsive" src="dist/img/portfollo/MyWeb-3.png" alt="MyWeb App ReDesign">',
             showConfirmButton: false,
         })
     });
     $('#onefix').on('click', function() {
         Swal.fire({
-            html: '<img class="img-responsive" src="img/portfollo/onefixCIS-01.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-02.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-03.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-04.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-05.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-06.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-07.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-08.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-09.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-10.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-11.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-12.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-13.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-14.png" alt="onefixCIS"><img class="img-responsive" src="img/portfollo/onefixCIS-15.png" alt="onefixCIS">',
+            html: '<img class="img-responsive" src="dist/img/portfollo/onefixCIS-01.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-02.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-03.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-04.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-05.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-06.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-07.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-08.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-09.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-10.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-11.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-12.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-13.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-14.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-15.png" alt="onefixCIS">',
             showConfirmButton: false,
         })
     });
