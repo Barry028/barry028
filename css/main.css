@@ -943,6 +943,13 @@ em {
   overflow: hidden;
 }
 
+@media all and (max-width: 768px) {
+  .container-fluid {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
 .row {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
@@ -12279,6 +12286,12 @@ select::-ms-expand {
   font-size: 0;
 }
 
+@media all and (max-width: 768px) {
+  .re-main-cnt .re-about {
+    padding: 3rem 1.5rem;
+  }
+}
+
 .re-main-cnt .re-about img {
   display: none;
 }
@@ -12295,12 +12308,25 @@ select::-ms-expand {
   }
 }
 
+@media all and (max-width: 576px) {
+  .re-main-cnt .re-about img {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
 @media all and (max-width: 768px) {
   .re-main-cnt .re-about .about-cnt {
     display: inline-block;
     vertical-align: middle;
     width: calc(100% - 12rem);
     padding-left: 1rem;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .re-main-cnt .re-about .about-cnt {
+    width: calc(100% - 8rem);
   }
 }
 
@@ -12312,6 +12338,12 @@ select::-ms-expand {
 @media all and (max-width: 768px) {
   .re-main-cnt .re-about .about-cnt h1 {
     font-size: 2rem;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .re-main-cnt .re-about .about-cnt h1 {
+    font-size: 1.5rem;
   }
 }
 
@@ -12360,6 +12392,12 @@ select::-ms-expand {
   padding-top: .5rem;
 }
 
+@media all and (max-width: 576px) {
+  .re-main-cnt .re-about .about-cnt h2 {
+    font-size: 1rem;
+  }
+}
+
 .re-main-cnt .re-about .about-cnt h2 font {
   filter: alpha(opacity=40);
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40);
@@ -12370,6 +12408,12 @@ select::-ms-expand {
   padding-top: 1rem;
 }
 
+@media all and (max-width: 576px) {
+  .re-main-cnt .re-about .about-cnt p {
+    font-size: .75rem;
+  }
+}
+
 .re-main-cnt .re-block {
   padding: 2rem 1rem;
   background-color: #fff;
@@ -12377,6 +12421,12 @@ select::-ms-expand {
 
 .re-main-cnt .re-cnt-row {
   padding: 0 2rem;
+}
+
+@media all and (max-width: 768px) {
+  .re-main-cnt .re-cnt-row {
+    padding: 0 1.5rem;
+  }
 }
 
 .re-main-cnt .re-icon-heading-ver1 {
@@ -12617,6 +12667,12 @@ select::-ms-expand {
 @media (max-width: 992px) {
   .re-main-cnt #portfoliolist .portfolio {
     width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .re-main-cnt #portfoliolist .portfolio {
+    width: 100%;
   }
 }
 
