@@ -12169,6 +12169,7 @@ select::-ms-expand {
     position: absolute;
     left: 16rem;
     margin-left: -16rem;
+    display: none;
   }
 }
 
