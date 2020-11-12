@@ -12309,6 +12309,12 @@ select::-ms-expand {
   display: inline-block;
 }
 
+@media all and (max-width: 768px) {
+  .re-main-cnt .re-about .about-cnt h1 {
+    font-size: 2rem;
+  }
+}
+
 .re-main-cnt .re-about .about-cnt h1:before {
   content: attr(data-text);
   width: 100%;
