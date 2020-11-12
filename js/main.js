@@ -39,19 +39,19 @@
               showConfirmButton: false,
             })
           });
-                    $('#taea').on('click', function() {
+          $('#taea').on('click', function() {
             Swal.fire({
               imageUrl: 'dist/img/portfollo/taea-f.png',
               showConfirmButton: false,
             })
           });
-                              $('#tcsm').on('click', function() {
+          $('#tscm').on('click', function() {
             Swal.fire({
               imageUrl: 'dist/img/portfollo/tcsm-f.png',
               showConfirmButton: false,
             })
           });
-                              $('#ccu').on('click', function() {
+          $('#ccu').on('click', function() {
             Swal.fire({
               html: '<img class="img-responsive" src="dist/img/portfollo/ccu-f.png" alt="國立中正大學"><img class="img-responsive" src="dist/img/portfollo/ccu-1-f.png" alt="國立中正大學">',
               showConfirmButton: false,
