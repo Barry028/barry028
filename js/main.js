@@ -13,14 +13,12 @@
               showConfirmButton: false,
             })
           });
-
           $('#vacancy').on('click', function() {
             Swal.fire({
               imageUrl: 'dist/img/portfollo/vacancy-f.png',
               showConfirmButton: false,
             })
           });
-
           $('#hr').on('click', function() {
             Swal.fire({
               imageUrl: 'dist/img/portfollo/hr-f.png',
@@ -75,7 +73,6 @@
               showConfirmButton: false,
             })
           });
-
           $('#myweb').on('click', function() {
             Swal.fire({
               html: '<img class="img-responsive" src="dist/img/portfollo/MyWeb-1.png" alt="MyWeb App ReDesign"><img class="img-responsive" src="dist/img/portfollo/MyWeb-2.png" alt="MyWeb App ReDesign"><img class="img-responsive" src="dist/img/portfollo/MyWeb-3.png" alt="MyWeb App ReDesign">',
@@ -97,7 +94,10 @@
 
                 // Extends jQuery
                 $.BcMain.helpers.extendjQuery();
-
+                // Botostrap Tootltips
+                $('[data-toggle="tooltip"]').tooltip();
+                // Botostrap Popover
+                $('[data-toggle="popover"]').popover();
                 // Detect Internet Explorer (IE)
                 $.BcMain.helpers.detectIE();
 
@@ -118,6 +118,25 @@
                 });
 
               });
+
+              var loadingEl =
+                '<div id="logo_loader">\
+                  <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">\
+                      <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>\
+                  </svg>\
+              </div>';
+
+              document.write(loadingEl);
+              document.onreadystatechange = completeLoading;
+
+              function completeLoading() {
+                if (document.readyState == 'complete') {
+                  setTimeout(function() {
+                    var loadingMask = document.getElementById('logo_loader');
+                    loadingMask.parentNode.removeChild(loadingMask);
+                  }, 1500);
+                }
+              }
 
             },
 

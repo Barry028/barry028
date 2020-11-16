@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'BarryFont';
-  src:  url('fonts/BarryFont.eot?orw1zf');
-  src:  url('fonts/BarryFont.eot?orw1zf#iefix') format('embedded-opentype'),
-    url('fonts/BarryFont.ttf?orw1zf') format('truetype'),
-    url('fonts/BarryFont.woff?orw1zf') format('woff'),
-    url('fonts/BarryFont.svg?orw1zf#BarryFont') format('svg');
+  src:  url('fonts/BarryFont.eot?tjoea0');
+  src:  url('fonts/BarryFont.eot?tjoea0#iefix') format('embedded-opentype'),
+    url('fonts/BarryFont.ttf?tjoea0') format('truetype'),
+    url('fonts/BarryFont.woff?tjoea0') format('woff'),
+    url('fonts/BarryFont.svg?tjoea0#BarryFont') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ic-instagram:before {
+  content: "\ebd2";
+}
 .ic-github:before {
   content: "\ebd1";
 }

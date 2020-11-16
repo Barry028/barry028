@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta charset="UTF-8">
     <meta property="og:image" content="dist/img/resume.png" />
-    <title>BarrY 的履歷</title>
-    <!-- favicon -->
+    <title>BarrY 的履歷表 ｜ BarrY's Resume</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- iCon  -->
     <link rel="stylesheet" type="text/css" href="vendor/BarryFont-v1.0/style.css">
-    <!-- Vendor  -->
-    <link rel="stylesheet" type="text/css" href="vendor/sweetalert2/dist/sweetalert2.css">
-    <link rel="stylesheet" type="text/css" href="vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <!-- Animate  -->
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <!-- CSS  -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -23,37 +21,11 @@
         <script src="vender/respond/dest/respond.min.js"></script>
         <script src="vender/Placeholders/dist/placeholders.jquery.min.js"></script>
     <![endif]-->
-    <script>
-    (function(d) {
-        var config = {
-                kitId: 'ehi1irv',
-                scriptTimeout: 3000,
-                async: true
-            },
-            h = d.documentElement,
-            t = setTimeout(function() { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout),
-            tk = d.createElement("script"),
-            f = false,
-            s = d.getElementsByTagName("script")[0],
-            a;
-        h.className += " wf-loading";
-        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-        tk.async = true;
-        tk.onload = tk.onreadystatechange = function() {
-            a = this.readyState;
-            if (f || a && a != "complete" && a != "loaded") return;
-            f = true;
-            clearTimeout(t);
-            try { Typekit.load(config) } catch (e) {}
-        };
-        s.parentNode.insertBefore(tk, s)
-    })(document);
-    </script>
 </head>
 
 <body>
-    <aside class="re-side-bar" id="reAside">
-        <nav class="re-side-nav" id="redeSideNav">
+    <aside class="re-side-bar">
+        <nav class="re-side-nav">
             <div class="side-img">
                 <div class="side-img-container" style="background-image: url('dist/img/me.jpg');"></div>
             </div>
@@ -61,59 +33,73 @@
                 <li>
                     <a href="#about">
                         <i class="ic-businessman" aria-hidden="true"></i>
-                        <font>個人簡介</font>
+                        <font>個人簡介 / About</font>
                     </a>
                 </li>
                 <li>
                     <a href="#personal">
                         <i class="ic-id-card" aria-hidden="true"></i>
-                        <font>基本資料</font>
+                        <font>基本資料 / Personal</font>
                     </a>
                 </li>
                 <li>
                     <a href="#skills">
                         <i class="ic-crown" aria-hidden="true"></i>
-                        <font>專業技能</font>
+                        <font>專業技能 / Skills</font>
                     </a>
                 </li>
                 <li>
                     <a href="#experience">
                         <i class="ic-briefcase" aria-hidden="true"></i>
-                        <font>工作經歷</font>
+                        <font>工作經歷 / Experience</font>
                     </a>
                 </li>
                 <li>
                     <a href="#education">
                         <i class="ic-deal" aria-hidden="true"></i>
-                        <font>學歷資料</font>
+                        <font>學歷資料 / Education</font>
                     </a>
                 </li>
                 <li>
                     <a href="#portfolio">
                         <i class="ic-braille" aria-hidden="true"></i>
-                        <font>個人作品</font>
+                        <font>個人作品 / Portfolio</font>
                     </a>
                 </li>
             </ul>
+            <div class="re-side-bar-footer">
+                <a href="https://github.com/Barry028" class="btn btn--border--light btn--square rounded--100" target="_blank" data-toggle="tooltip" title="Github" data-original-title="Github">
+                    <i class="ic-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/barrylin0208/" class="btn btn--border--light btn--square rounded--100" target="_blank"data-toggle="tooltip" title="Instagram" data-original-title="Instagram">
+                    <i class="ic-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://barry028.netlify.app/" class="btn btn--border--light btn--square rounded--100" target="_blank"data-toggle="tooltip" title="Resume" data-original-title="Resume">
+                    <i class="ic-domain" aria-hidden="true"></i>
+                </a>
+            </div>
         </nav>
     </aside>
     <main class="re-main-cnt">
         <section class="re-about scrollspy" id="about">
-            <div class="mask mask_dark--80"></div>
+            <div class="mask mask_dark--88"></div>
             <div class="container-fluid">
                 <div class="row">
-                    <img src="dist/img/me.JPG" alt="Barry">
+                    <div class="side-img">
+                        <div class="side-img-container" style="background-image: url('dist/img/me.jpg');"></div>
+                    </div>
                     <div class="about-cnt">
                         <h1 data-text="Hello，我是 BarrY">Hello，我是 BarrY.</h1>
-                        <h2>UI / UX設計 <font>｜</font> 網站企劃</h2>
+                        <h2>UI / UX設計 <font>｜</font> 網站企劃 <font>｜</font> 網頁設計</h2>
+                        <h3>擁有 6 年以上 「Ui / Ux 設計」 及 「網站規劃」相關經驗。</h3>
                         <p>
-                            6年 Ui / Ux設計以及網站規劃經驗，
-                            雙系統 App 設計、網站規劃、網站設計、Ui/Ux設計、響應式網站設計/切版、Scss/Sass，熟悉 Float 排版。
+                            擅長 網站規劃、網站Ui / Ux設計、雙系統 App 設計（熟悉iOS Human Interface、Android Material design）、響應式網站設計 / 切版、熟悉 Scss / Sass 語法、熟悉 Bootstrap、擅長製作跨瀏覽器的網站（IE、Safari 等等⋯）
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+        <hr>
         <section class="re-block scrollspy" id="personal">
             <div class="container-fluid">
                 <div class="row">
@@ -128,42 +114,42 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <i class="ic-user-alt"></i>
-                            <h4 class="inline-block">全名</h4>
+                            <h4 class="inline-block">全名 <small>Full Name</small></h4>
                             <p>林 本益 <font>｜</font> Pen Yi, Lin </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <i class="ic-cake"></i>
-                            <h4 class="inline-block">生日</h4>
+                            <h4 class="inline-block">生日 <small>Birthday</small></h4>
                             <p>1990 / 02 / 08</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <i class="ic-map"></i>
-                            <h4 class="inline-block">居住地</h4>
+                            <h4 class="inline-block">居住地 <small>Address</small></h4>
                             <p>TaiPei, TaiWan </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <i class="ic-email"></i>
-                            <h4 class="inline-block">信箱</h4>
+                            <h4 class="inline-block">信箱 <small>E-Mail</small></h4>
                             <p><a href="mailto:barrlin0208@gmail.com">barrlin0208@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <i class="ic-smartphone-alt"></i>
-                            <h4 class="inline-block">電話</h4>
+                            <h4 class="inline-block">電話 <small>Phone</small></h4>
                             <p><a href="tel:+886960740479">+886 960-740479</a></p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <i class="ic-car"></i>
-                            <h4 class="inline-block">駕照</h4>
+                            <h4 class="inline-block">駕照 <small>Driver's License</small></h4>
                             <p>普通重型機車、普通小型車</p>
                         </div>
                     </div>
@@ -182,12 +168,16 @@
                     </div>
                 </div>
                 <div class="re-cnt-row">
+                    <h4 class="re-sub-heading-ver2">
+                        <font>FrontEnd</font>
+                        <big>前端及網頁相關</big>
+                    </h4>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <img src="dist/img/html.svg" alt="html" class="re-skills-icon">
                             <h4 class="in-bk-mid">HTML5</h4>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
                             </div>
                         </div>
                     </div>
@@ -196,7 +186,7 @@
                             <img src="dist/img/css.svg" alt="CSS3" class="re-skills-icon">
                             <h4 class="in-bk-mid">CSS3</h4>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
                             </div>
                         </div>
                     </div>
@@ -232,7 +222,7 @@
                             <img src="dist/img/nodejs.svg" alt="nodejs" class="re-skills-icon">
                             <h4 class="in-bk-mid">NODE.JS</h4>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
                             </div>
                         </div>
                     </div>
@@ -241,7 +231,7 @@
                             <img src="dist/img/gulp.svg" alt="gulp" class="re-skills-icon">
                             <h4 class="in-bk-mid">GULP</h4>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
                             </div>
                         </div>
                     </div>
@@ -250,7 +240,7 @@
                             <img src="dist/img/npm.svg" alt="npm" class="re-skills-icon">
                             <h4 class="in-bk-mid">NPM</h4>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
                             </div>
                         </div>
                     </div>
@@ -263,30 +253,45 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="re-cnt-row">
+                    <h4 class="re-sub-heading-ver2">
+                        <font>Design</font>
+                        <big>設計繪圖相關</big>
+                    </h4>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <img src="dist/img/adobe-illustrator.svg" alt="adobe-illustrator" class="re-skills-icon">
-                            <h4 class="in-bk-mid">ADOBE-ILLUSTRATOR</h4>
+                            <h4 class="in-bk-mid">ILLUSTRATOR</h4>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <img src="dist/img/adobe-photoshop.svg" alt="adobe-photoshop" class="re-skills-icon">
-                            <h4 class="in-bk-mid">ADOBE-PHOTOSHOP</h4>
+                            <h4 class="in-bk-mid">PHOTOSHOP</h4>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <img src="dist/img/adobe-xd.svg" alt="adobe-xd" class="re-skills-icon">
-                            <h4 class="in-bk-mid">ADOBE-XD</h4>
+                            <h4 class="in-bk-mid">XD</h4>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="re-icon-heading-ver3">
+                            <img src="dist/img/sketch.svg" alt="SKETCH" class="re-skills-icon">
+                            <h4 class="in-bk-mid">SKETCH</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
                             </div>
                         </div>
                     </div>
@@ -295,7 +300,7 @@
                             <img src="dist/img/Zeplin.svg" alt="Zeplin" class="re-skills-icon">
                             <h4 class="in-bk-mid">ZEPLIN</h4>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                                <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
                             </div>
                         </div>
                     </div>
@@ -413,53 +418,53 @@
                         <span class="filter" data-filter="all">All</span>
                     </li>
                     <li>
-                        <span class="filter" data-filter=".app">App</span>
+                        <span class="filter" data-filter=".app">App Desgin</span>
                     </li>
                     <li>
-                        <span class="filter" data-filter=".web">Web</span>
+                        <span class="filter" data-filter=".web">Web Desgin</span>
                     </li>
                     <li>
-                        <span class="filter" data-filter=".logo">Logo</span>
+                        <span class="filter" data-filter=".logo">Logo Desgin</span>
                     </li>
                 </ul>
                 <div id="portfoliolist">
                     <div class="portfolio web" data-cat="web">
                         <figure class="portfolio-card" id="membercenter">
                             <div class="hovereffect">
-                                <img class="img-responsive" src="dist/img/portfollo/membercenter.png" alt="1111人力銀行 會員中心">
+                                <img class="img-responsive" src="dist/img/portfollo/membercenter.png" alt="1111人力銀行 - 會員中心">
                                 <figcaption class="overlay web">
                                     <div class="hovereffect-title">
-                                        <h6>1111人力銀行 會員中心</h6>
+                                        <h6>1111人力銀行 - 會員中心</h6>
                                     </div>
                                 </figcaption>
                             </div>
                         </figure>
                         <label class="badge badge--primary inline-block mt-12">Web Design</label>
-                        <h6>1111人力銀行 會員中心</h6>
+                        <h6>1111人力銀行 - 會員中心</h6>
                         <p>網站上線時間 2020 / 07</p>
                         <a href="https://xd.adobe.com/view/91622eb4-5991-4e2a-bd7c-757c85f14c45-c431/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
                         <a href="https://www.1111.com.tw/membercenter/Index" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
-                        <a href="https://github.com/Barry028/MemberCenter" class="btn btn--square btn--dark " target="_blank">
+                        <a href="https://github.com/Barry028/MemberCenter" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
                     </div>
                     <div class="portfolio web" data-cat="web">
                         <figure class="portfolio-card" id="vacancy">
                             <div class="hovereffect">
-                                <img class="img-responsive" src="dist/img/portfollo/vacancy.png" alt="1111人力銀行 職缺頁">
+                                <img class="img-responsive" src="dist/img/portfollo/vacancy.png" alt="1111人力銀行 - 職缺頁">
                                 <figcaption class="overlay web">
                                     <div class="hovereffect-title">
-                                        <h6>1111人力銀行 職缺頁</h6>
+                                        <h6>1111人力銀行 - 職缺頁</h6>
                                     </div>
                                 </figcaption>
                             </div>
                         </figure>
                         <label class="badge badge--primary inline-block mt-12">Web Design</label>
-                        <h6>1111人力銀行 職缺頁</h6>
+                        <h6>1111人力銀行 - 職缺頁</h6>
                         <p>網站上線時間 2020 / 10</p>
                         <a href="https://xd.adobe.com/view/49a96d8e-75e9-4422-b7bd-ab1bc126dac0-1cfa/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
                         <a href="https://www.1111.com.tw/job/91524962/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
-                        <a href="https://github.com/Barry028/JobBank" class="btn btn--square btn--dark " target="_blank">
+                        <a href="https://github.com/Barry028/JobBank" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -469,17 +474,17 @@
                                 <img class="img-responsive" src="dist/img/portfollo/recruit.png" alt="1111人力銀行 求才招募系統 (登入前)">
                                 <figcaption class="overlay web">
                                     <div class="hovereffect-title">
-                                        <h6>1111人力銀行 求才招募系統</h6>
+                                        <h6>1111人力銀行 - 求才招募系統</h6>
                                     </div>
                                 </figcaption>
                             </div>
                         </figure>
                         <label class="badge badge--primary inline-block mt-12">Web Design</label>
-                        <h6>1111人力銀行 求才招募系統 (登入前)</h6>
+                        <h6>1111人力銀行 - 求才招募系統 (登入前)</h6>
                         <p>網站上線時間 2019 / 02</p>
                         <a href="https://xd.adobe.com/view/c2fd0e48-ac8c-41fb-a786-a2c496b266ca-97ae/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
                         <a href="https://recruit.1111.com.tw/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
-                        <a href="https://github.com/Barry028/1111-Recruit" class="btn btn--square btn--dark" target="_blank">
+                        <a href="https://github.com/Barry028/1111-Recruit" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -489,17 +494,17 @@
                                 <img class="img-responsive" src="dist/img/portfollo/hr.png" alt="1HR人資差勤系統">
                                 <figcaption class="overlay web">
                                     <div class="hovereffect-title">
-                                        <h6>1HR人資差勤系統 App 介紹</h6>
+                                        <h6>1111人力銀行 - 1HR人資差勤系統 App 介紹</h6>
                                     </div>
                                 </figcaption>
                             </div>
                         </figure>
                         <label class="badge badge--primary inline-block mt-12">Web Design</label>
-                        <h6>1HR人資差勤系統 App 介紹</h6>
+                        <h6>1111人力銀行 - 1HR人資差勤系統 App 介紹</h6>
                         <p>網站上線時間 2020 / 05</p>
                         <a href="https://xd.adobe.com/view/670de60d-ae80-4b82-81b9-84d7ed6d32c4-325e/" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
                         <a href="https://event.1111.com.tw/event20/1hr/promo/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
-                        <a href="https://github.com/Barry028/eHrApp" class="btn btn--square btn--dark " target="_blank">
+                        <a href="https://github.com/Barry028/eHrApp" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -509,17 +514,17 @@
                                 <img class="img-responsive" src="dist/img/portfollo/taea.png" alt="台南 南瀛天文館">
                                 <figcaption class="overlay web">
                                     <div class="hovereffect-title">
-                                        <h6>台南 南瀛天文館</h6>
+                                        <h6>台南 - 南瀛天文館</h6>
                                     </div>
                                 </figcaption>
                             </div>
                         </figure>
                         <label class="badge badge--primary inline-block mt-12">Web Design</label>
-                        <h6>台南 南瀛天文館</h6>
+                        <h6>台南 - 南瀛天文館</h6>
                         <p>網站上線時間 今年5月才接的案子，尚未上線</p>
                         <a href="https://xd.adobe.com/view/67989730-0753-42fc-a73b-8e0f7091c050-32cb/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
                         <a href="https://gdemo.jie-heng.com.tw/taea_html/assets/index.html" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
-                        <a href="https://github.com/Barry028/taea_html" class="btn btn--square btn--dark" target="_blank">
+                        <a href="https://github.com/Barry028/taea_html" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -529,17 +534,17 @@
                                 <img class="img-responsive" src="dist/img/portfollo/tcsm.png" alt="台南 兒童科學教育館">
                                 <figcaption class="overlay web">
                                     <div class="hovereffect-title">
-                                        <h6>台南 兒童科學教育館</h6>
+                                        <h6>台南 - 兒童科學教育館</h6>
                                     </div>
                                 </figcaption>
                             </div>
                         </figure>
                         <label class="badge badge--primary inline-block mt-12">Web Design</label>
-                        <h6>台南 兒童科學教育館</h6>
+                        <h6>台南 - 兒童科學教育館</h6>
                         <p>網站上線時間 今年5月才接的案子，尚未上線</p>
                         <a href="https://xd.adobe.com/view/c47f15f0-dacc-4db7-a7d8-98b058fdce62-912c/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
                         <a href="https://gdemo.jie-heng.com.tw/tscm_html/assets/index.html" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
-                        <a href="https://github.com/Barry028/tscm_html" class="btn btn--square btn--dark" target="_blank">
+                        <a href="https://github.com/Barry028/tscm_html" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -575,7 +580,7 @@
                         <p>網站上線時間 尚未上線</p>
                         <a href="https://xd.adobe.com/view/dc0d49e1-e7cd-41ab-8dd5-5a7621e29f9a-895e/screen/98b56323-b7c8-441b-9914-2b568fa07695" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
                         <a href="http://210.65.47.72/kokokara_html/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
-                        <a href="https://github.com/Barry028/kokokara" class="btn btn--square btn--dark" target="_blank">
+                        <a href="https://github.com/Barry028/kokokara" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -595,7 +600,7 @@
                         <p>網站上線時間 2019 (去年活動，製作像素風的網站以及遊戲)</p>
                         <a href="https://xd.adobe.com/view/b64879d1-5b49-48fb-613e-da76c2d26035-c079/" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
                         <a href="https://twkc.ctee.com.tw/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
-                        <a href="https://github.com/Barry028/Twkc" class="btn btn--square btn--dark" target="_blank">
+                        <a href="https://github.com/Barry028/Twkc" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -685,13 +690,19 @@
                 </div>
             </div>
         </section>
+        <footer id="footer">
+            © 2020 - <strong>BarrY</strong> Resume All Rights Reserved.
+            <p class="push-right">建議瀏覽器版本 IE9.0 以上</p>
+        </footer>
     </main>
     <button class="rt-fix-tools go-to-top js-go-to" data-type="fixed" data-position='{"bottom": 72,"right": 24}' data-offset-top="400" data-compensation="#about" data-show-effect="zoomIn">
-        <i class="ic-direction"></i>
+        <i class="ic-upload"></i>
         <font>回頂端</font>
     </button>
     <!-- JQuery -->
     <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Bundle -->
+    <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Sweetalert2 -->
     <script type="text/javascript" src="vendor/sweetalert2/dist/sweetalert2.js"></script>
     <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
