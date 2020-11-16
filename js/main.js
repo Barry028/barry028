@@ -9,7 +9,7 @@
           });
           $('#membercenter').on('click', function() {
             Swal.fire({
-              imageUrl: 'dist/img/portfollo/membercenter-f.png',
+              html: '<img class="img-responsive" src="dist/img/portfollo/membercenter-f1.png" alt="membercenter"><img class="img-responsive" src="dist/img/portfollo/membercenter-f3.png" alt="membercenter"><img class="img-responsive" src="dist/img/portfollo/membercenter-f2.png" alt="membercenter">',
               showConfirmButton: false,
             })
           });
