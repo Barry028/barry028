@@ -14837,7 +14837,8 @@ select::-ms-expand {
   position: fixed;
   width: 16rem;
   height: 100%;
-  background-color: #0c292d;
+  background-color: #26292a;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='2.3' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
   box-shadow: 6px 16px 32px -18px #A5B2B4;
   color: #fff;
   text-transform: capitalize;
@@ -14973,7 +14974,8 @@ select::-ms-expand {
 }
 
 .re-side-bar .re-side-bar-footer {
-  background-color: #0b2327;
+  background-color: #202324;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='2.3' stroke-opacity='0.04'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
   position: fixed;
   bottom: 0;
   width: 16rem;
@@ -15163,7 +15165,7 @@ select::-ms-expand {
 }
 
 .re-main-cnt .re-about .about-cnt h3 {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: normal;
   padding-top: .5rem;
 }
@@ -15307,6 +15309,12 @@ select::-ms-expand {
   vertical-align: text-bottom;
 }
 
+@media all and (max-width: 576px) {
+  .re-main-cnt .re-icon-heading-ver3 i {
+    vertical-align: super;
+  }
+}
+
 .re-main-cnt .re-icon-heading-ver3 h4 {
   font-size: 1rem;
 }
@@ -15319,6 +15327,12 @@ select::-ms-expand {
 
 .re-main-cnt .re-icon-heading-ver3 h4 small {
   color: #A5B2B4;
+}
+
+@media all and (max-width: 576px) {
+  .re-main-cnt .re-icon-heading-ver3 h4 small {
+    display: block;
+  }
 }
 
 .re-main-cnt .re-icon-heading-ver3 p {
