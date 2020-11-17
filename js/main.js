@@ -1,91 +1,6 @@
         ;
         (function($) {
 
-          $('#recruit').on('click', function() {
-            Swal.fire({
-              imageUrl: 'dist/img/portfollo/recruit-f.png',
-              showConfirmButton: false,
-            })
-          });
-          $('#membercenter').on('click', function() {
-            Swal.fire({
-              html: '<img class="img-responsive" src="dist/img/portfollo/membercenter-f1.png" alt="membercenter"><img class="img-responsive" src="dist/img/portfollo/membercenter-f3.png" alt="membercenter"><img class="img-responsive" src="dist/img/portfollo/membercenter-f2.png" alt="membercenter">',
-              showConfirmButton: false,
-            })
-          });
-          $('#vacancy').on('click', function() {
-            Swal.fire({
-              imageUrl: 'dist/img/portfollo/vacancy-f.png',
-              showConfirmButton: false,
-            })
-          });
-          $('#hr').on('click', function() {
-            Swal.fire({
-              imageUrl: 'dist/img/portfollo/hr-f.png',
-              showConfirmButton: false,
-            })
-          });
-          $('#kokokara').on('click', function() {
-            Swal.fire({
-              imageUrl: 'dist/img/portfollo/kokokara-f.png',
-              showConfirmButton: false,
-            })
-          });
-          $('#twkc').on('click', function() {
-            Swal.fire({
-              imageUrl: 'dist/img/portfollo/twkc-f.png',
-              showConfirmButton: false,
-            })
-          });
-          $('#taea').on('click', function() {
-            Swal.fire({
-              imageUrl: 'dist/img/portfollo/taea-f.png',
-              showConfirmButton: false,
-            })
-          });
-          $('#tscm').on('click', function() {
-            Swal.fire({
-              imageUrl: 'dist/img/portfollo/tcsm-f.png',
-              showConfirmButton: false,
-            })
-          });
-          $('#ccu').on('click', function() {
-            Swal.fire({
-              html: '<img class="img-responsive" src="dist/img/portfollo/ccu-f.png" alt="國立中正大學"><img class="img-responsive" src="dist/img/portfollo/ccu-1-f.png" alt="國立中正大學">',
-              showConfirmButton: false,
-            })
-          });
-          $('#123share').on('click', function() {
-            Swal.fire({
-              html: '<img class="img-responsive" src="dist/img/portfollo/123Share-1.png" alt="123 SHare App ReDesign"><img class="img-responsive" src="dist/img/portfollo/123Share-2.png" alt="123 SHare App ReDesign"><img class="img-responsive" src="dist/img/portfollo/123Share-3.png" alt="123 SHare App ReDesign">',
-              showConfirmButton: false,
-            })
-          });
-          $('#coupon').on('click', function() {
-            Swal.fire({
-              html: '<img class="img-responsive" src="dist/img/portfollo/ifansCouPon-1.png" alt="瘋折扣 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/ifansCouPon-2.png" alt="瘋折扣 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/ifansCouPon-3.png" alt="瘋折扣 App ReDesign">',
-              showConfirmButton: false,
-            })
-          });
-          $('#market').on('click', function() {
-            Swal.fire({
-              html: '<img class="img-responsive" src="dist/img/portfollo/market-1.png" alt="瘋市場 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/market-2.png" alt="瘋市場 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/market-3.png" alt="瘋市場 App ReDesign">',
-              showConfirmButton: false,
-            })
-          });
-          $('#myweb').on('click', function() {
-            Swal.fire({
-              html: '<img class="img-responsive" src="dist/img/portfollo/MyWeb-1.png" alt="MyWeb App ReDesign"><img class="img-responsive" src="dist/img/portfollo/MyWeb-2.png" alt="MyWeb App ReDesign"><img class="img-responsive" src="dist/img/portfollo/MyWeb-3.png" alt="MyWeb App ReDesign">',
-              showConfirmButton: false,
-            })
-          });
-          $('#onefix').on('click', function() {
-            Swal.fire({
-              html: '<img class="img-responsive" src="dist/img/portfollo/onefixCIS-01.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-02.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-03.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-04.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-05.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-06.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-07.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-08.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-09.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-10.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-11.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-12.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-13.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-14.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-15.png" alt="onefixCIS">',
-              showConfirmButton: false,
-            })
-          });
-
           $.BcMain = {
 
             init: function() {
@@ -102,6 +17,11 @@
                 $.BcMain.helpers.detectIE();
 
                 $.BcBackToGo.init('.js-go-to');
+                // initialization of horizontal progress bars
+                var horizontalProgressBars = $.BcProgressBar.init('.js-hr-progress-bar', {
+                  direction: 'horizontal',
+                  indicatorSelector: '.js-hr-progress-bar-indicator'
+                });
 
               });
 
@@ -258,6 +178,92 @@
           };
 
           $.BcMain.init();
+          
           $.BcMain.components.filterList();
+
+          $('#recruit').on('click', function() {
+            Swal.fire({
+              imageUrl: 'dist/img/portfollo/recruit-f.png',
+              showConfirmButton: false,
+            })
+          });
+          $('#membercenter').on('click', function() {
+            Swal.fire({
+              html: '<img class="img-responsive" src="dist/img/portfollo/membercenter-f1.png" alt="membercenter"><img class="img-responsive" src="dist/img/portfollo/membercenter-f3.png" alt="membercenter"><img class="img-responsive" src="dist/img/portfollo/membercenter-f2.png" alt="membercenter">',
+              showConfirmButton: false,
+            })
+          });
+          $('#vacancy').on('click', function() {
+            Swal.fire({
+              imageUrl: 'dist/img/portfollo/vacancy-f.png',
+              showConfirmButton: false,
+            })
+          });
+          $('#hr').on('click', function() {
+            Swal.fire({
+              imageUrl: 'dist/img/portfollo/hr-f.png',
+              showConfirmButton: false,
+            })
+          });
+          $('#kokokara').on('click', function() {
+            Swal.fire({
+              imageUrl: 'dist/img/portfollo/kokokara-f.png',
+              showConfirmButton: false,
+            })
+          });
+          $('#twkc').on('click', function() {
+            Swal.fire({
+              imageUrl: 'dist/img/portfollo/twkc-f.png',
+              showConfirmButton: false,
+            })
+          });
+          $('#taea').on('click', function() {
+            Swal.fire({
+              imageUrl: 'dist/img/portfollo/taea-f.png',
+              showConfirmButton: false,
+            })
+          });
+          $('#tscm').on('click', function() {
+            Swal.fire({
+              imageUrl: 'dist/img/portfollo/tcsm-f.png',
+              showConfirmButton: false,
+            })
+          });
+          $('#ccu').on('click', function() {
+            Swal.fire({
+              html: '<img class="img-responsive" src="dist/img/portfollo/ccu-f.png" alt="國立中正大學"><img class="img-responsive" src="dist/img/portfollo/ccu-1-f.png" alt="國立中正大學">',
+              showConfirmButton: false,
+            })
+          });
+          $('#123share').on('click', function() {
+            Swal.fire({
+              html: '<img class="img-responsive" src="dist/img/portfollo/123Share-1.png" alt="123 SHare App ReDesign"><img class="img-responsive" src="dist/img/portfollo/123Share-2.png" alt="123 SHare App ReDesign"><img class="img-responsive" src="dist/img/portfollo/123Share-3.png" alt="123 SHare App ReDesign">',
+              showConfirmButton: false,
+            })
+          });
+          $('#coupon').on('click', function() {
+            Swal.fire({
+              html: '<img class="img-responsive" src="dist/img/portfollo/ifansCouPon-1.png" alt="瘋折扣 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/ifansCouPon-2.png" alt="瘋折扣 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/ifansCouPon-3.png" alt="瘋折扣 App ReDesign">',
+              showConfirmButton: false,
+            })
+          });
+          $('#market').on('click', function() {
+            Swal.fire({
+              html: '<img class="img-responsive" src="dist/img/portfollo/market-1.png" alt="瘋市場 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/market-2.png" alt="瘋市場 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/market-3.png" alt="瘋市場 App ReDesign">',
+              showConfirmButton: false,
+            })
+          });
+          $('#myweb').on('click', function() {
+            Swal.fire({
+              html: '<img class="img-responsive" src="dist/img/portfollo/MyWeb-1.png" alt="MyWeb App ReDesign"><img class="img-responsive" src="dist/img/portfollo/MyWeb-2.png" alt="MyWeb App ReDesign"><img class="img-responsive" src="dist/img/portfollo/MyWeb-3.png" alt="MyWeb App ReDesign">',
+              showConfirmButton: false,
+            })
+          });
+          $('#onefix').on('click', function() {
+            Swal.fire({
+              html: '<img class="img-responsive" src="dist/img/portfollo/onefixCIS-01.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-02.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-03.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-04.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-05.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-06.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-07.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-08.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-09.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-10.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-11.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-12.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-13.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-14.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-15.png" alt="onefixCIS">',
+              showConfirmButton: false,
+            })
+          });
 
         })(jQuery);
