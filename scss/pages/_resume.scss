@@ -566,6 +566,29 @@
         }
     }
 
+    .contact-form {
+        .contact-img {
+            margin-bottom: 2rem;
+
+            &:before {
+                content: '';
+                padding: 20% 0 0;
+                display: block;
+                width: 100%;
+            }
+
+            .contact-img-container {
+                background-size: cover;
+                background-position: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
     #filters {
         margin: 1rem 0 0;
         list-style: none;

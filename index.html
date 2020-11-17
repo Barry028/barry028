@@ -70,7 +70,7 @@
                 </li>
                 <li>
                     <a href="#contact">
-                        <i class="ic-braille" aria-hidden="true"></i>
+                        <i class="ic-conversation" aria-hidden="true"></i>
                         <font>留言給我 / Contact</font>
                     </a>
                 </li>
@@ -79,10 +79,10 @@
                 <a href="https://github.com/Barry028" class="btn btn--border--light btn--square rounded--100" target="_blank" data-toggle="tooltip" title="Github" data-original-title="Github">
                     <i class="ic-github" aria-hidden="true"></i>
                 </a>
-                <a href="https://www.instagram.com/barrylin0208/" class="btn btn--border--light btn--square rounded--100" target="_blank"data-toggle="tooltip" title="Instagram" data-original-title="Instagram">
+                <a href="https://www.instagram.com/barrylin0208/" class="btn btn--border--light btn--square rounded--100" target="_blank" data-toggle="tooltip" title="Instagram" data-original-title="Instagram">
                     <i class="ic-instagram" aria-hidden="true"></i>
                 </a>
-                <a href="https://barry028.netlify.app/" class="btn btn--border--light btn--square rounded--100" target="_blank"data-toggle="tooltip" title="Resume" data-original-title="Resume">
+                <a href="https://barry028.netlify.app/" class="btn btn--border--light btn--square rounded--100" target="_blank" data-toggle="tooltip" title="Resume" data-original-title="Resume">
                     <i class="ic-domain" aria-hidden="true"></i>
                 </a>
             </div>
@@ -353,7 +353,6 @@
                                 <span class="year">2012-09 - 2018-03</span>
                                 <h5>專案經理 / 網站規劃</h5>
                                 <h6>- 生活經紀人事業股份有限公司</h6>
-                
                             </div>
                             <div class="timeline-item-txt">
                                 <ul>
@@ -432,7 +431,6 @@
                     <li>
                         <span class="filter" data-filter=".app">App Desgin</span>
                     </li>
-                    
                     <li>
                         <span class="filter" data-filter=".logo">Logo Desgin</span>
                     </li>
@@ -702,10 +700,61 @@
         </section>
         <hr>
         <section class="re-block scrollspy" id="contact">
-            <form name="contact" method="POST" netlify data-netlify="true" data-netlify-recaptcha="true" id="contact-form" class="contact-form">
-                <input required name="name" type="text" placeholder="" /><div data-netlify-recaptcha="true" class="form-row"></div>
-                <button type="submit">Subscribe for Updates</button>
-            </form>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="re-icon-heading-ver1">
+                        <h3 class="re-icon-heading-ver1-hd" data-heading="contact">留言給我</h3>
+                        <div class="re-icon-heading-ver1-bd">
+                            <i class="ic-conversation" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <form name="contact" method="POST" netlify data-netlify="true" data-netlify-recaptcha="true" id="contact-form" class="row contact-form">
+                        <div class="contact-img">
+                            <div class="mask mask_slash mask_dark--80"></div>
+                            <div class="contact-img-container" data-bg-img-src="img/concept.jpg"></div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="name" class="block mb-12">
+                                    <font class="text--danger">*</font>
+                                    <strong>姓名 / Name</strong>
+                                </label>
+                                <div class="input--bt-line-group">
+                                    <input type="text" class="form-control input--bt-line" id="name" placeholder="Username" required="">
+                                    <span class="bt-line"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="block mb-12">
+                                    <font class="text--danger">*</font>
+                                    <strong>信箱 / Email</strong>
+                                </label>
+                                <div class="input--bt-line-group">
+                                    <input type="email" class="form-control input--bt-line" id="email" placeholder="Email" required="">
+                                    <span class="bt-line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="message" class="block mb-12">
+                                    <font class="text--danger">*</font>
+                                    <strong>留言 / Message</strong>
+                                </label>
+                                <div class="input--bt-line-group">
+                                    <textarea class="form-control input--bt-line" id="message" rows="6" placeholder="Message" required=""></textarea>
+                                    <span class="bt-line"></span>
+                                </div>
+                            </div>
+                            <div data-netlify-recaptcha="true" class="form-row"></div>
+                            <button type="submit" class="btn btn--dark btn--block btn--md">送出留言</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
         </section>
         <footer id="footer">
             © 2020 - <strong>BarrY</strong> Resume All Rights Reserved.

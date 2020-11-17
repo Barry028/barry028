@@ -21,6 +21,7 @@
                 $.BcMain.helpers.detectIE();
 
                 $.BcBackToGo.init('.js-go-to');
+
                 // initialization of horizontal progress bars
                 var horizontalProgressBars = $.BcProgressBar.init('.js-hr-progress-bar', {
                   direction: 'horizontal',
@@ -34,7 +35,7 @@
                 scrollSpy('#redeMenu', {
                   sectionClass: '.scrollspy',
                   menuActiveTarget: '#redeMenu li a',
-                  offset: 100
+                  offset: 200
                 });
 
                 $('#reAside').mCustomScrollbar({
