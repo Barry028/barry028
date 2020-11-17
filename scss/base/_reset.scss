@@ -85,9 +85,9 @@ a {
         color: $link-hover-color;
     }
 
-    &:visited {
-        color: lighten($link-hover-color, 25%);
-    }
+    // &:visited {
+    //     color: lighten($link-hover-color, 25%);
+    // }
 }
 
 a

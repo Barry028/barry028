@@ -11,12 +11,12 @@ $success: 				#38D9A9 !default;
 $danger: 				#EF6866 !default;
 $warning: 				#FFB76B !default;
 $info: 					#3B79DB !default;
-$dark: 					#343A40 !default;
-$grey: 					#868E96 !default;
-$lightgrey: 			#C5C9CA !default;
+$dark: 					#0F3237 !default;
+$grey: 					#4B6569 !default;
+$lightgrey: 			#A5B2B4 !default;
 $light: 				#dfe2e3 !default;
 $black:					#2C3031 !default;
-$default:				#F5FDFE !default;
+$default:				#E1E5E6 !default;
 $watergrey: 			#D2D6D7 !default;
 $smoke: 				#F3F3F4	!default;
 //== Black Colors
@@ -321,11 +321,11 @@ $transition-check-mark:			all 0.3s cubic-bezier(0.12, 0.49, 0.17, 0.87)!default;
 //== Typography
 
 // $font-family-serif:      		'Merriweather', serif !default;
-$font-family-sans-serif:      	source-han-sans-japanese, montserrat, -apple-system, 'Helvetica Neue', Helvetica, Arial,
+$font-family-sans-serif:      	Noto Sans TC, -apple-system, 'Helvetica Neue', Helvetica, Arial,
 								'Microsoft JhengHei', "微軟正黑體", 'PingFang SC', 'Noto Sans CJK TC', sans-serif !default;
-$font-family-monospace:       	source-han-sans-japanese, montserrat, -apple-system, 'Helvetica Neue', Helvetica, Arial,
+$font-family-monospace:       	Noto Sans TC, -apple-system, 'Helvetica Neue', Helvetica, Arial,
 								'Microsoft JhengHei', "微軟正黑體", 'PingFang SC', 'Noto Sans CJK TC', sans-serif !default;
-$font-family-base:            	source-han-sans-japanese, montserrat, -apple-system, 'Helvetica Neue', Helvetica, Arial,
+$font-family-base:            	Noto Sans TC, -apple-system, 'Helvetica Neue', Helvetica, Arial,
 								'Microsoft JhengHei', "微軟正黑體", 'PingFang SC', 'Noto Sans CJK TC', sans-serif !default;
 
 $font-size-html-base:			16px 						!default;

@@ -7,7 +7,6 @@
 		"helpers/root";
 
 //==  Helpers
-
 @import "helpers/rfs";
 
 
@@ -19,8 +18,8 @@
 		"base/typography";
 
 //== Vendor
-@import "vendor/chosen/chosen";
-
+@import "vendor/mCustomScrollbar",
+		"vendor/sweetalert2";
 
 //== Layout
 @import "layout/grid",
@@ -70,4 +69,16 @@
 
 //== Pages
 @import "pages/resume";
+
+
+
+
+
+
+
+
+
+
+
+
 

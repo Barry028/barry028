@@ -13,6 +13,10 @@
                 $('[data-toggle="tooltip"]').tooltip();
                 // Botostrap Popover
                 $('[data-toggle="popover"]').popover();
+
+                // Set Background Image Dynamically
+                if ($('[data-bg-img-src]').length) $.BcMain.helpers.bgImage($('[data-bg-img-src]'));
+
                 // Detect Internet Explorer (IE)
                 $.BcMain.helpers.detectIE();
 
@@ -38,25 +42,6 @@
                 });
 
               });
-
-              var loadingEl =
-                '<div id="logo_loader">\
-                  <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">\
-                      <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>\
-                  </svg>\
-              </div>';
-
-              document.write(loadingEl);
-              document.onreadystatechange = completeLoading;
-
-              function completeLoading() {
-                if (document.readyState == 'complete') {
-                  setTimeout(function() {
-                    var loadingMask = document.getElementById('logo_loader');
-                    loadingMask.parentNode.removeChild(loadingMask);
-                  }, 1500);
-                }
-              }
 
             },
 
@@ -84,7 +69,27 @@
 
 
               },
+              /**
+               * Sets background-image dynamically.
+               *
+               * @param jQuery collection
+               *
+               * @return jQuery|undefined
+               */
+              bgImage: function(collection) {
 
+                if (!collection || !collection.length) return;
+
+                return collection.each(function(i, el) {
+
+                  var $el = $(el),
+                    bgImageSrc = $el.data('bg-img-src');
+
+                  if (bgImageSrc) $el.css('background-image', 'url(' + bgImageSrc + ')');
+
+                });
+
+              },
 
               /**
                * Extends basic jQuery functionality
@@ -178,7 +183,7 @@
           };
 
           $.BcMain.init();
-          
+
           $.BcMain.components.filterList();
 
           $('#recruit').on('click', function() {

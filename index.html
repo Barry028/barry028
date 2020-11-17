@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <!-- CSS  -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Loading -->
+    <script type="text/javascript" src="js/components/loading.js"></script>
     <!--[if lte IE 9]>
         <script src="vender/html5shiv/dist/html5shiv.min.js"></script>
         <script src="vender/respond/dest/respond.min.js"></script>
@@ -27,7 +29,7 @@
     <aside class="re-side-bar">
         <nav class="re-side-nav">
             <div class="side-img">
-                <div class="side-img-container" style="background-image: url('dist/img/me.jpg');"></div>
+                <div class="side-img-container" data-bg-img-src="dist/img/me.jpg"></div>
             </div>
             <ul id="redeMenu">
                 <li>
@@ -86,7 +88,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="side-img">
-                        <div class="side-img-container" style="background-image: url('dist/img/me.jpg');"></div>
+                        <div class="side-img-container" data-bg-img-src="dist/img/me.jpg"></div>
                     </div>
                     <div class="about-cnt">
                         <h1 data-text="Hello，我是 BarrY">Hello，我是 BarrY.</h1>
@@ -433,7 +435,7 @@
                     <div class="portfolio web" data-cat="web">
                         <figure class="portfolio-card" id="membercenter">
                             <div class="hovereffect">
-                                <img class="img-responsive" src="dist/img/portfollo/membercenter.png" alt="1111人力銀行 - 會員中心">
+                                <img class="img-responsive" src="dist/img/portfollo/membercenter.png" alt="1111人力銀行 - 會員中心" loading="lazy">
                                 <figcaption class="overlay web">
                                     <div class="hovereffect-title">
                                         <h6>1111人力銀行 - 會員中心</h6>
@@ -696,6 +698,10 @@
             © 2020 - <strong>BarrY</strong> Resume All Rights Reserved.
             <p class="push-right">建議瀏覽器版本 IE9.0 以上</p>
         </footer>
+        <form name="contact" method="POST" netlify>
+        <input required name="name" type="text" placeholder="" />
+        <button type="submit">Subscribe for Updates</button>
+      </form>
     </main>
     <button class="rt-fix-tools go-to-top js-go-to" data-type="fixed" data-position='{"bottom": 72,"right": 24}' data-offset-top="400" data-compensation="#about" data-show-effect="zoomIn">
         <i class="ic-upload"></i>
