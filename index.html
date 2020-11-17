@@ -66,12 +66,6 @@
                         <font>個人作品 / Portfolio</font>
                     </a>
                 </li>
-                <li>
-                    <a href="#contact">
-                        <i class="ic-braille" aria-hidden="true"></i>
-                        <font>留言給我 / Contact</font>
-                    </a>
-                </li>
             </ul>
             <div class="re-side-bar-footer">
                 <a href="https://github.com/Barry028" class="btn btn--border--light btn--square rounded--100" target="_blank" data-toggle="tooltip" title="Github" data-original-title="Github">
@@ -696,39 +690,6 @@
                 </div>
             </div>
         </section>
-        <hr>
-        <section class="re-block scrollspy" id="contact">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="re-icon-heading-ver1">
-                        <h3 class="re-icon-heading-ver1-hd" data-heading="contact">聯絡我！</h3>
-                        <div class="re-icon-heading-ver1-bd">
-                            <i class="ic-braille" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="re-cnt-row">
-                    <form name="contact" method="POST" data-netlify="true" id="pizzaOrder">
-                        <p>
-                          <label for="name">Name</label>
-                          <input type="text" id="name" name="name" />
-                        </p>
-                        <p>
-                          <label for="email">Email</label>
-                          <input type="text" id="email" name="email" />
-                        </p>
-                        <p>
-                          <label for="message">Message</label>
-                          <textarea id="message" name="message"></textarea>
-                        </p>
-                        <p>
-                          <button type="submit">Send</button>
-                        </p>
-                      </form>
-                </div>
-
-            </div>
-        </section>
         <footer id="footer">
             © 2020 - <strong>BarrY</strong> Resume All Rights Reserved.
             <p class="push-right">建議瀏覽器版本 IE9.0 以上</p>
@@ -758,21 +719,6 @@
     <script type="text/javascript" src="js/components/BcGotop.js"></script>
     <!-- Main -->
     <script type="text/javascript" src="js/main.js"></script>
-    <script>
-        document.querySelector("form").addEventListener("submit", handleSubmit);
-
-        const handleSubmit = (e) => {
-          e.preventDefault()
-          let myForm = document.getElementById('pizzaOrder');
-          let formData = new FormData(myForm)
-          fetch('/', {
-            method: 'POST',
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString()
-          }).then(() => console.log('Form successfully submitted')).catch((error) =>
-            alert(error))
-        }
-    </script>
 </body>
 
 </html>
