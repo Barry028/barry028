@@ -66,6 +66,12 @@
                         <font>個人作品 / Portfolio</font>
                     </a>
                 </li>
+                <li>
+                    <a href="#contact">
+                        <i class="ic-braille" aria-hidden="true"></i>
+                        <font>留言給我 / Contact</font>
+                    </a>
+                </li>
             </ul>
             <div class="re-side-bar-footer">
                 <a href="https://github.com/Barry028" class="btn btn--border--light btn--square rounded--100" target="_blank" data-toggle="tooltip" title="Github" data-original-title="Github">
@@ -523,7 +529,7 @@
                         <h6>臺南市 - 南瀛天文館</h6>
                         <p>網站上線時間 今年5月才接的案子，尚未上線</p>
                         <a href="https://xd.adobe.com/view/67989730-0753-42fc-a73b-8e0f7091c050-32cb/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
-                        <a href="https://gdemo.jie-heng.com.tw/taea_html/assets/index.html" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
+                        <a href="https://gdemo.jie-heng.com.tw/taea_html/assets/index.html" class="btn btn--primary btn--sm mr-4" target="_blank">測試網址</a>
                         <a href="https://github.com/Barry028/taea_html" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
@@ -543,7 +549,7 @@
                         <h6>臺南市 - 兒童科學教育館</h6>
                         <p>網站上線時間 今年5月才接的案子，尚未上線</p>
                         <a href="https://xd.adobe.com/view/c47f15f0-dacc-4db7-a7d8-98b058fdce62-912c/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
-                        <a href="https://gdemo.jie-heng.com.tw/tscm_html/assets/index.html" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
+                        <a href="https://gdemo.jie-heng.com.tw/tscm_html/assets/index.html" class="btn btn--primary btn--sm mr-4" target="_blank">測試網址</a>
                         <a href="https://github.com/Barry028/tscm_html" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
@@ -579,7 +585,7 @@
                         <h6>Kokokara 購物網站</h6>
                         <p>網站上線時間 尚未上線</p>
                         <a href="https://xd.adobe.com/view/dc0d49e1-e7cd-41ab-8dd5-5a7621e29f9a-895e/screen/98b56323-b7c8-441b-9914-2b568fa07695" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
-                        <a href="http://210.65.47.72/kokokara_html/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
+                        <a href="http://210.65.47.72/kokokara_html/" class="btn btn--primary btn--sm mr-4" target="_blank">測試網址</a>
                         <a href="https://github.com/Barry028/kokokara" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
@@ -690,6 +696,39 @@
                 </div>
             </div>
         </section>
+        <hr>
+        <section class="re-block scrollspy" id="contact">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="re-icon-heading-ver1">
+                        <h3 class="re-icon-heading-ver1-hd" data-heading="contact">聯絡我！</h3>
+                        <div class="re-icon-heading-ver1-bd">
+                            <i class="ic-braille" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="re-cnt-row">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>
+                          <label for="name">Name</label>
+                          <input type="text" id="name" name="name" />
+                        </p>
+                        <p>
+                          <label for="email">Email</label>
+                          <input type="text" id="email" name="email" />
+                        </p>
+                        <p>
+                          <label for="message">Message</label>
+                          <textarea id="message" name="message"></textarea>
+                        </p>
+                        <p>
+                          <button type="submit">Send</button>
+                        </p>
+                      </form>
+                </div>
+
+            </div>
+        </section>
         <footer id="footer">
             © 2020 - <strong>BarrY</strong> Resume All Rights Reserved.
             <p class="push-right">建議瀏覽器版本 IE9.0 以上</p>
@@ -719,6 +758,25 @@
     <script type="text/javascript" src="js/components/BcGotop.js"></script>
     <!-- Main -->
     <script type="text/javascript" src="js/main.js"></script>
+    <script>
+function encode(data) {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&")
+  }
+
+const handleSubmit = (event) => {
+  event.preventDefault()
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encode({
+      "form-name": event.target.getAttribute("name"),
+      ...name
+    })
+  }).then(() => navigate("/thank-you/")).catch(error => alert(error))
+}
+    </script>
 </body>
 
 </html>
