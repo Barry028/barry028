@@ -758,7 +758,8 @@
     <script type="text/javascript" src="js/components/BcGotop.js"></script>
     <!-- Main -->
     <script type="text/javascript" src="js/main.js"></script>
-    <script>
+    <script>document.querySelector("form").addEventListener("submit", handleSubmit);
+
 function encode(data) {
     return Object.keys(data)
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
