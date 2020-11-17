@@ -708,7 +708,7 @@
                     </div>
                 </div>
                 <div class="re-cnt-row">
-                    <form name="contact" method="POST" data-netlify="true">
+                    <form name="contact" method="POST" data-netlify="true" id="pizzaOrder">
                         <p>
                           <label for="name">Name</label>
                           <input type="text" id="name" name="name" />
@@ -758,25 +758,20 @@
     <script type="text/javascript" src="js/components/BcGotop.js"></script>
     <!-- Main -->
     <script type="text/javascript" src="js/main.js"></script>
-    <script>document.querySelector("form").addEventListener("submit", handleSubmit);
+    <script>
+        document.querySelector("form").addEventListener("submit", handleSubmit);
 
-function encode(data) {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&")
-  }
-
-const handleSubmit = (event) => {
-  event.preventDefault()
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: encode({
-      "form-name": event.target.getAttribute("name"),
-      ...name
-    })
-  }).then(() => navigate("/thank-you/")).catch(error => alert(error))
-}
+        const handleSubmit = (e) => {
+          e.preventDefault()
+          let myForm = document.getElementById('pizzaOrder');
+          let formData = new FormData(myForm)
+          fetch('/', {
+            method: 'POST',
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString()
+          }).then(() => console.log('Form successfully submitted')).catch((error) =>
+            alert(error))
+        }
     </script>
 </body>
 
