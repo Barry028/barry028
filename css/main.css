@@ -13227,7 +13227,6 @@ fieldset[disabled] .input--bt-line-group .input--bt-line.input--bt-line {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
 
 .mask.mask_white--4 {
