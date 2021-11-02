@@ -25,12 +25,23 @@
     .re-side-nav {
         text-align: center;
 
+        .hide-menu-tool {
+            position: absolute;
+            right: 0;
+        }
+
         .side-img {
             margin: 2rem 4rem;
             cursor: pointer;
+            transform: translate(-100%);
+            animation: sections-nav-item .35s cubic-bezier(.75, 0, .45, 1.1) forwards;
 
             @media all and (max-width: $screen-sm-min) {
-                margin: 6rem .5rem;
+                margin: 4rem .5rem;
+            }
+            &:hover {
+                opacity: .66;
+                transition: $transition-base;
             }
 
             &:before {
@@ -71,7 +82,7 @@
                     display: block;
                     user-select: none;
                     color: rgba($white, 0.66);
-                    font-size: .75rem;
+                    font-size: .875rem;
                     padding: .875rem 0 .875rem 3rem;
                     transition: .125s all ease-in-out;
                     text-decoration: none;
@@ -145,7 +156,101 @@
         }
     }
 }
+#redeMenu > .active-li.active-li.active-li.active-li {
+    animation-play-state: running;
+}
 
+    #redeMenu > li {
+        transform: translate(-100%);
+        animation: sections-nav-item .35s cubic-bezier(.75, 0, .45, 1.1) forwards paused ;
+    }
+
+    #redeMenu > li:nth-child(1n) {
+
+        animation-delay: .3s
+    }
+
+    #redeMenu > li:nth-child(2n) {
+
+        animation-delay: .35s
+    }
+
+    #redeMenu > li:nth-child(3n) {
+
+        animation-delay: .4s
+    }
+
+    #redeMenu > li:nth-child(4n) {
+
+        animation-delay: .45s
+    }
+
+    #redeMenu > li:nth-child(5n) {
+
+        animation-delay: .5s
+    }
+
+    #redeMenu > li:nth-child(6n) {
+
+        animation-delay: .55s
+    }
+
+    #redeMenu > li:nth-child(7n) {
+
+        animation-delay: .6s
+    }
+
+    #redeMenu > li:nth-child(8n) {
+
+        animation-delay: .65s
+    }
+
+    #redeMenu > li:nth-child(9n) {
+
+        animation-delay: .7s
+    }
+
+    #redeMenu > li:nth-child(10n) {
+
+        animation-delay: .75s
+    }
+
+    #redeMenu > li:nth-child(11n) {
+
+        animation-delay: .8s
+    }
+
+    #redeMenu > li:nth-child(12n) {
+
+        animation-delay: .85s
+    }
+
+
+@-webkit-keyframes sections-nav-item {
+    0% {
+
+        transform: translate(-100%)
+    }
+
+    to {
+
+        transform: translate(0)
+    }
+
+}
+
+@keyframes sections-nav-item {
+    0% {
+
+        transform: translate(-100%)
+    }
+
+    to {
+
+        transform: translate(0)
+    }
+
+}
 /*  page about
 ----------------------------------------  */
 
@@ -167,7 +272,7 @@
 
     .re-about {
         padding: 4rem 2rem;
-        background: url("../dist/img/coded-stuff-screen.jpg");
+        // background: url("../dist/img/coded-stuff-screen.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -224,6 +329,13 @@
                 width: calc(100% - 6rem);
             }
 
+            .ani-type {
+                &:before {
+                    animation: type 6s steps(18) infinite backwards;
+                    animation-iteration-count: 2;
+                }
+            }
+
             h1 {
                 color: transparent;
                 display: inline-block;
@@ -243,8 +355,6 @@
                     color: $white;
                     overflow: hidden;
                     border-right: 1px solid $white;
-                    animation: type 6s steps(18) infinite backwards;
-                    animation-iteration-count: 2;
                     white-space: nowrap;
                     position: absolute;
                 }
@@ -267,7 +377,7 @@
             h2 {
                 font-size: 1.25rem;
                 font-weight: normal;
-                padding-top: .5rem;
+                padding-top: 1rem;
 
                 @media all and (max-width: $screen-xs-min) {
                     font-size: 1rem;
@@ -281,7 +391,7 @@
             h3 {
                 font-size: 1rem;
                 font-weight: normal;
-                padding-top: .5rem;
+                padding-top: 1rem;
 
                 @media all and (max-width: $screen-xs-min) {
                     font-size: .875rem;
@@ -291,7 +401,7 @@
             p {
                 font-size: .875rem;
                 color: rgba($white, 0.7);
-                padding-top: .75rem;
+                padding-top: 1.25rem;
 
                 @media all and (max-width: $screen-xs-min) {
                     font-size: .75rem;
@@ -301,8 +411,8 @@
     }
 
     .re-block {
-        padding: 2rem 1rem;
-        background-color: #fff;
+        padding: 4rem 1rem;
+        background-color: $white;
     }
 
     .re-cnt-row {
@@ -323,7 +433,7 @@
 
         .re-icon-heading-ver1-hd,
         .re-icon-heading-ver1:after {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
         }
 
         .re-icon-heading-ver1-hd {
@@ -348,7 +458,7 @@
                 top: -75%;
                 left: 2.25rem;
                 white-space: nowrap;
-                opacity: .08;
+                opacity: .12;
                 font-weight: 500;
             }
 
@@ -386,7 +496,7 @@
     .re-sub-heading-ver2 {
         margin-top: 0.75rem;
         text-transform: uppercase;
-        font-size: .875rem;
+        font-size: 1.0625rem;
         font-weight: 400;
         margin-bottom: .5rem;
 
@@ -398,7 +508,8 @@
             padding: .75rem .5rem;
             user-select: none;
             color: $white;
-            background-color: lighten($primary, 25%);
+            background-color: lighten($primary, 10%);
+            border-radius: 2px;
         }
 
         big {
@@ -408,13 +519,13 @@
     }
 
     .re-icon-heading-ver3 {
-        padding: 1rem 0 .75rem;
+        padding: 1rem 0 1.25rem;
 
         i {
-            color: $light;
+            color: $primary;
             font-size: 1.25rem;
             padding-right: .5rem;
-            vertical-align: text-bottom;
+            @include in-bk-mid;
 
             @media all and (max-width: $screen-xs-min) {
                 vertical-align: super;
@@ -422,14 +533,16 @@
         }
 
         h4 {
-            font-size: 1rem;
+            font-size: 1.0625rem;
+            @include in-bk-mid;
 
             @media all and (max-width: $screen-md-min) {
-                font-size: .875rem;
+                font-size: 1rem;
             }
 
             small {
                 color: $lightgrey;
+                padding-left: .25rem;
 
                 @media all and (max-width: $screen-xs-min) {
                     display: block;
@@ -438,8 +551,8 @@
         }
 
         p {
-            font-size: 0.875rem;
-            padding-top: .75rem;
+            font-size: 1rem;
+            padding-top: 1rem;
             color: $grey;
 
             font {
@@ -511,14 +624,14 @@
                 }
 
                 img {
-                    height: 2rem;
+                    // height: 50px;
                     display: block;
                     margin-top: .5rem;
                 }
 
                 .year {
                     color: $lightgrey;
-                    font-size: 0.75rem;
+                    font-size: 0.875rem;
                     display: block;
                 }
 
@@ -529,7 +642,7 @@
                 }
 
                 h6 {
-                    font-size: 0.9375rem;
+                    font-size: 1rem;
                     margin-top: .5rem;
                 }
             }
@@ -539,6 +652,7 @@
 
                 width: 75%;
                 font-size: 0.875rem;
+                line-height: 1.75;
                 color: $grey;
                 padding: 0 1rem;
 
@@ -569,7 +683,8 @@
     .contact-form {
         .contact-img {
             margin-bottom: 2rem;
-
+            background-color: darken($primary, 10%);
+            border-radius: 4px;
             &:before {
                 content: '';
                 padding: 20% 0 0;
@@ -577,14 +692,42 @@
                 width: 100%;
             }
 
-            .contact-img-container {
-                background-size: cover;
-                background-position: center;
+            h4 {
                 position: absolute;
-                top: 0;
-                left: 0;
+                left: 2rem;
+                top: 1rem;
+                color: $white;
+                font-size: 2.5rem;
+                opacity: 1;
+                z-index: 1;
+
+                &:before {
+                content: '';
+                border-radius: 2px;
                 width: 100%;
-                height: 100%;
+                height: .625rem;
+                position: absolute;
+                bottom: 0.375rem;
+                left: 0;
+                will-change: width;
+
+                background-color: #00ffff;
+                opacity: .66;
+                z-index: -1;
+                }
+            }
+
+            .contact-img-container {
+                background-size: contain;
+                background-position: right center;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 100%;
+                height: 80%;
+
             }
         }
     }
@@ -602,18 +745,25 @@
                 display: block;
                 padding: .25rem 1.25rem;
                 text-decoration: none;
+
                 color: $grey;
                 cursor: pointer;
-                border: 1px solid $smoke;
+                border: 1px solid $smoke; border-radius: 2px;
+                font-size: 1rem;
                 transition: $transition-base;
 
                 &.active {
-                    background: $primary;
+                    background-color: $primary;
                     color: $white;
                     border: 1px solid $primary;
+
+                    &:hover {
+                        color: $white;
+                        background-color: lighten($primary,10%);
+                    }
                 }
 
-                &:hover {
+                &:not(.active):hover {
                     color: $primary;
                     border: 1px solid $primary;
                 }
@@ -641,8 +791,8 @@
                 width: 100%;
             }
 
-            .portfolio-card {
-                .hovereffect {
+            .portfolio-card { border-radius: 4px;
+                .hovereffect { border-radius: 4px;
                     width: 100%;
                     height: 100%;
                     overflow: hidden;
@@ -700,10 +850,17 @@
             }
 
             h6 {
-                font-size: 1rem;
+                font-size: 1.125rem;
                 margin-top: .5rem;
 
-                @include text-truncate;
+                // @include text-truncate;
+            }
+
+            .description {
+                color: $grey;
+                font-size: .875rem;
+                margin-top: 1rem;
+                margin-bottom: .5rem;
             }
 
             p {

@@ -72,6 +72,19 @@
 		"animations/rotate-exit/rotateOutUpLeft",
 		"animations/rotate-exit/rotateOutUpRight";
 
+// SLIDER IN
+@import	"animations/slide-enter/slideInDown",
+		"animations/slide-enter/slideInLeft",
+		"animations/slide-enter/slideInRight",
+		"animations/slide-enter/slideInUp";
+
+// SLIDER OUT
+@import	"animations/slide-exit/slideOutDown",
+		"animations/slide-exit/slideOutLeft",
+		"animations/slide-exit/slideOutRight",
+		"animations/slide-exit/slideOutUp";
+
+
 // SPECIAL
 @import "animations/special/hinge",
 		"animations/special/rollIn",

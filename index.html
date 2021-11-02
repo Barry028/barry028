@@ -26,50 +26,56 @@
 </head>
 
 <body>
-    <aside class="re-side-bar">
+    <!-- 側邊選單 Start -->
+    <aside class="re-side-bar" id="reAside">
         <nav class="re-side-nav">
-            <div class="side-img">
+            <div class="hide-menu-tool">
+                <svg id="Group_207725" data-name="Group 207725" xmlns="http://www.w3.org/2000/svg" width="56.781" height="116.481" viewBox="0 0 56.781 116.481">
+                    <path id="Path_246625" data-name="Path 246625" d="M947.161-599.61c-1.919-9.407-4.321-16.633-9.367-22.737-5.271-6.374-11.936-9.645-20.161-10.48-14.312-1.451-23.216-8.433-26.423-20.156-3.6-13.164,4.853-26.928,18.875-30.692,1.877-.5,3.768-.979,5.678-1.32,18.8-3.359,27.72-12.321,31.4-31.1Z" transform="translate(-890.38 716.092)" fill="#1864ab" />
+                </svg>
+            </div>
+            <div class="side-img" id="avatar">
                 <div class="side-img-container" data-bg-img-src="dist/img/me.jpg"></div>
             </div>
             <ul id="redeMenu">
                 <li>
-                    <a href="#about">
+                    <a data-scroll="about" href="#about">
                         <i class="ic-businessman" aria-hidden="true"></i>
                         <font>個人簡介 / About</font>
                     </a>
                 </li>
                 <li>
-                    <a href="#personal">
+                    <a data-scroll="personal" href="#personal">
                         <i class="ic-id-card" aria-hidden="true"></i>
                         <font>基本資料 / Personal</font>
                     </a>
                 </li>
                 <li>
-                    <a href="#skills">
+                    <a data-scroll="skills" href="#skills">
                         <i class="ic-crown" aria-hidden="true"></i>
                         <font>專業技能 / Skills</font>
                     </a>
                 </li>
                 <li>
-                    <a href="#experience">
+                    <a data-scroll="experience" href="#experience">
                         <i class="ic-briefcase" aria-hidden="true"></i>
                         <font>工作經歷 / Experience</font>
                     </a>
                 </li>
                 <li>
-                    <a href="#education">
+                    <a data-scroll="education" href="#education">
                         <i class="ic-deal" aria-hidden="true"></i>
                         <font>學歷資料 / Education</font>
                     </a>
                 </li>
                 <li>
-                    <a href="#portfolio">
+                    <a data-scroll="portfolio" href="#portfolio">
                         <i class="ic-braille" aria-hidden="true"></i>
                         <font>個人作品 / Portfolio</font>
                     </a>
                 </li>
                 <li>
-                    <a href="#contact">
+                    <a data-scroll="contact" href="#contact">
                         <i class="ic-conversation" aria-hidden="true"></i>
                         <font>留言給我 / Contact</font>
                     </a>
@@ -88,15 +94,17 @@
             </div>
         </nav>
     </aside>
+    <!-- 側邊選單 End -->
+    <!-- 關於我 Start -->
     <main class="re-main-cnt">
-        <section class="re-about scrollspy" id="about">
+        <section class="re-about scroll_menu" id="about" data-bg-img-src="dist/img/coded-stuff-screen.jpg">
             <div class="mask mask_dark--88"></div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="side-img">
+                    <div class="side-img" data-aos="fade-right">
                         <div class="side-img-container" data-bg-img-src="dist/img/me.jpg"></div>
                     </div>
-                    <div class="about-cnt">
+                    <div class="about-cnt" data-aos="zoom-in-right">
                         <h1 data-text="Hello，我是 BarrY">Hello，我是 BarrY.</h1>
                         <h2>UI / UX設計 <font>｜</font> 網站企劃 <font>｜</font> 網頁設計</h2>
                         <h3>擁有 6 年以上 「Ui / Ux 設計」 及 「網站規劃」相關經驗。</h3>
@@ -107,75 +115,79 @@
                 </div>
             </div>
         </section>
+        <!-- 關於我 End -->
         <hr>
-        <section class="re-block scrollspy" id="personal">
+        <!-- 基本資料 Start -->
+        <section class="re-block scroll_menu" id="personal">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="re-icon-heading-ver1">
+                    <div class="re-icon-heading-ver1" data-aos="fade-down">
                         <h3 class="re-icon-heading-ver1-hd" data-heading="personal">基本資料</h3>
                         <div class="re-icon-heading-ver1-bd">
                             <i class="ic-id-card" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
-                <div class="re-cnt-row">
+                <div class="re-cnt-row" data-aos="fade-right">
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <i class="ic-user-alt"></i>
-                            <h4 class="inline-block">全名 <small>Full Name</small></h4>
+                            <h4>全名 <small>Full Name</small></h4>
                             <p>林 本益 <font>｜</font> Pen Yi, Lin </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <i class="ic-cake"></i>
-                            <h4 class="inline-block">生日 <small>Birthday</small></h4>
+                            <h4>生日 <small>Birthday</small></h4>
                             <p>1990 / 02 / 08</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <i class="ic-map"></i>
-                            <h4 class="inline-block">居住地 <small>Address</small></h4>
+                            <h4>居住地 <small>Address</small></h4>
                             <p>TaiPei, TaiWan </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <i class="ic-email"></i>
-                            <h4 class="inline-block">信箱 <small>E-Mail</small></h4>
-                            <p><a href="mailto:barrlin0208@gmail.com">barrlin0208@gmail.com</a></p>
+                            <h4>信箱 <small>E-Mail</small></h4>
+                            <p><a href="mailto:barrylin0208@gmail.com">barrylin0208@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <i class="ic-smartphone-alt"></i>
-                            <h4 class="inline-block">電話 <small>Phone</small></h4>
+                            <h4>電話 <small>Phone</small></h4>
                             <p><a href="tel:+886960740479">+886 960-740479</a></p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="re-icon-heading-ver3">
                             <i class="ic-car"></i>
-                            <h4 class="inline-block">駕照 <small>Driver's License</small></h4>
+                            <h4>駕照 <small>Driver's License</small></h4>
                             <p>普通重型機車、普通小型車</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- 基本資料 End -->
         <hr>
-        <section class="re-block scrollspy" id="skills">
+        <!-- 專業技能 Start -->
+        <section class="re-block scroll_menu" id="skills">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="re-icon-heading-ver1">
+                    <div class="re-icon-heading-ver1" data-aos="fade-down">
                         <h3 class="re-icon-heading-ver1-hd" data-heading="skills">專業技能</h3>
                         <div class="re-icon-heading-ver1-bd">
                             <i class="ic-crown" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
-                <div class="re-cnt-row">
+                <div class="re-cnt-row" data-aos="fade-right" data-aos-delay="0">
                     <h4 class="re-sub-heading-ver2">
                         <font>FrontEnd</font>
                         <big>前端及網頁相關</big>
@@ -185,7 +197,7 @@
                             <img src="dist/img/html.svg" alt="html" class="re-skills-icon">
                             <h4 class="in-bk-mid">HTML5</h4>
                             <div class="progress js-hr-progress-bar">
-                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" title="95%" data-placement="right"></div>
                             </div>
                         </div>
                     </div>
@@ -194,7 +206,7 @@
                             <img src="dist/img/css.svg" alt="CSS3" class="re-skills-icon">
                             <h4 class="in-bk-mid">CSS3</h4>
                             <div class="progress js-hr-progress-bar">
-                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" title="95%" data-placement="right"></div>
                             </div>
                         </div>
                     </div>
@@ -203,7 +215,7 @@
                             <img src="dist/img/jquery.svg" alt="JQuery" class="re-skills-icon">
                             <h4 class="in-bk-mid">JQUERY</h4>
                             <div class="progress js-hr-progress-bar">
-                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" title="65%" data-placement="right"></div>
                             </div>
                         </div>
                     </div>
@@ -212,7 +224,7 @@
                             <img src="dist/img/javascript.svg" alt="javascript" class="re-skills-icon">
                             <h4 class="in-bk-mid">JAVASCRIPT</h4>
                             <div class="progress js-hr-progress-bar">
-                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" title="40%" data-placement="right"></div>
                             </div>
                         </div>
                     </div>
@@ -221,7 +233,7 @@
                             <img src="dist/img/sass.svg" alt="SASS/SCSS" class="re-skills-icon">
                             <h4 class="in-bk-mid">SASS / SCSS</h4>
                             <div class="progress js-hr-progress-bar">
-                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" title="65%" data-placement="right"></div>
                             </div>
                         </div>
                     </div>
@@ -230,7 +242,7 @@
                             <img src="dist/img/nodejs.svg" alt="nodejs" class="re-skills-icon">
                             <h4 class="in-bk-mid">NODE.JS</h4>
                             <div class="progress js-hr-progress-bar">
-                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" title="35%" data-placement="right"></div>
                             </div>
                         </div>
                     </div>
@@ -239,7 +251,7 @@
                             <img src="dist/img/gulp.svg" alt="gulp" class="re-skills-icon">
                             <h4 class="in-bk-mid">GULP</h4>
                             <div class="progress js-hr-progress-bar">
-                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" title="45%" data-placement="right"></div>
                             </div>
                         </div>
                     </div>
@@ -248,7 +260,7 @@
                             <img src="dist/img/npm.svg" alt="npm" class="re-skills-icon">
                             <h4 class="in-bk-mid">NPM</h4>
                             <div class="progress js-hr-progress-bar">
-                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" title="35%" data-placement="right"></div>
                             </div>
                         </div>
                     </div>
@@ -257,12 +269,12 @@
                             <img src="dist/img/github.svg" alt="github" class="re-skills-icon">
                             <h4 class="in-bk-mid">GITHUB</h4>
                             <div class="progress js-hr-progress-bar">
-                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"data-toggle="tooltip" title="65%" data-placement="right"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="re-cnt-row">
+                <div class="re-cnt-row" data-aos="fade-right" data-aos-delay="0">
                     <h4 class="re-sub-heading-ver2">
                         <font>Design</font>
                         <big>設計繪圖相關</big>
@@ -312,50 +324,81 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="re-icon-heading-ver3">
+                            <img src="dist/img/figma.svg" alt="Zeplin" class="re-skills-icon">
+                            <h4 class="in-bk-mid">FIGMA</h4>
+                            <div class="progress js-hr-progress-bar">
+                                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- 專業技能 End -->
         <hr>
-        <section class="re-block scrollspy" id="experience">
+        <!-- 工作經歷 Start -->
+        <section class="re-block scroll_menu" id="experience">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="re-icon-heading-ver1">
+                    <div class="re-icon-heading-ver1" data-aos="fade-down">
                         <h3 class="re-icon-heading-ver1-hd" data-heading="Experience">工作經歷</h3>
                         <div class="re-icon-heading-ver1-bd">
                             <i class="ic-briefcase" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
-                <div class="re-cnt-row">
+                <div class="re-cnt-row" data-aos-delay="0">
                     <div class="timeline">
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="0">
                             <div class="timeline-main">
-                                <span class="year">2020-06 - 2020-09</span>
+                                <span class="year">2021-02 - 在職中</span>
                                 <h5>Ui/Ux 設計師</h5>
-                                <h6>- 頡亨資訊股份有限公司</h6>
+                                <h6>- 東柏資訊科技股份有限公司</h6>
+                                <img src="dist/img/logo_turbo.svg" alt="1111人力銀行">
                             </div>
                             <div class="timeline-item-txt">
                                 <ul>
+                                    <li>・繪製流程圖、架構圖、Wireframe 等等</li>
                                     <li>・設計網頁 Ui 介面及訂製設計規範</li>
-                                    <li>・網頁切版及前端動態製作</li>
-                                    <li>・雙系統 App Ui 設計及標注</li>
+                                    <li>・網頁切版及前端動態製作 (Html、Css、Js)</li>
+                                    <li>・根據廠商服務需求產出相對應之視覺文件</li>
+                                    <li>・協助公司產出各種平面素材</li>
                                 </ul>
                             </div>
                             <div class="timeline-point"></div>
                         </div>
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                            <div class="timeline-main">
+                                <span class="year">2020-06 - 2020-09</span>
+                                <h5>Ui/Ux 設計師</h5>
+                                <h6>- 頡亨資訊股份有限公司</h6>
+                                <img src="dist/img/logo_jie.svg" alt="1111人力銀行">
+                            </div>
+                            <div class="timeline-item-txt">
+                                <ul>
+                                    <li>・設計網頁 Ui 介面及訂製設計規範</li>
+                                    <li>・網頁切版及前端動態製作 (Html、Css、Js)</li>
+                                    <li>・雙系統 App Ui 設計及標注</li>
+                                    <li>・協助產出平面素材設計及 Cis 設計</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-point"></div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
                             <div class="timeline-main">
                                 <span class="year">2018-06 - 2020-06</span>
                                 <h5>企劃專員 (Ui設計)</h5>
                                 <h6>- 全球華人股份有限公司<br>(1111人力銀行)</h6>
-                                <img src="dist/img/1111_logo.svg" alt="1111人力銀行">
+                                <img src="dist/img/logo_1111.svg" alt="1111人力銀行">
                             </div>
                             <div class="timeline-item-txt">
                                 <ul>
                                     <li>・網站發想及規劃</li>
                                     <li>・繪製流程圖、架構圖、Wireframe 等等</li>
                                     <li>・設計 UI 介面及訂製設計規範</li>
-                                    <li>・網頁切版及前端動態製作</li>
+                                    <li>・網頁切版及前端動態製作 (Html、Css、Js)</li>
                                     <li>・觀看數據及根據使用者回報或問卷去調整介面 Or 網站流程</li>
                                     <li>・與工程人員及行銷人員溝通及協調</li>
                                     <li>・管理產品進度</li>
@@ -364,7 +407,7 @@
                             </div>
                             <div class="timeline-point"></div>
                         </div>
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="600">
                             <div class="timeline-main">
                                 <span class="year">2012-09 - 2018-03</span>
                                 <h5>專案經理 / 網站規劃</h5>
@@ -387,11 +430,13 @@
                 </div>
             </div>
         </section>
+        <!-- 工作經歷 End -->
         <hr>
-        <section class="re-block scrollspy" id="education">
+        <!-- 學歷資料 Start -->
+        <section class="re-block scroll_menu" id="education">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="re-icon-heading-ver1">
+                    <div class="re-icon-heading-ver1" data-aos="fade-down">
                         <h3 class="re-icon-heading-ver1-hd" data-heading="education">學歷資料</h3>
                         <div class="re-icon-heading-ver1-bd">
                             <i class="ic-deal" aria-hidden="true"></i>
@@ -400,7 +445,7 @@
                 </div>
                 <div class="re-cnt-row">
                     <div class="timeline">
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="0">
                             <div class="timeline-main">
                                 <span class="year">2008-09 - 2014-01</span>
                                 <h5>德明財經科技大學</h5>
@@ -411,7 +456,7 @@
                             </div>
                             <div class="timeline-point"></div>
                         </div>
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
                             <div class="timeline-main">
                                 <span class="year">2005-09 - 2008-06</span>
                                 <h5>南華高中</h5>
@@ -426,45 +471,102 @@
                 </div>
             </div>
         </section>
+        <!-- 學歷資料 End -->
         <hr>
-        <section class="re-block scrollspy" id="portfolio">
+        <!-- 個人作品 Start -->
+        <section class="re-block scroll_menu" id="portfolio">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="re-icon-heading-ver1">
+                    <div class="re-icon-heading-ver1" data-aos="fade-down">
                         <h3 class="re-icon-heading-ver1-hd" data-heading="portfolio">個人作品</h3>
                         <div class="re-icon-heading-ver1-bd">
                             <i class="ic-braille" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
-                <ul id="filters" class="row">
+                <ul id="filters" class="row" data-aos="fade-right" data-aos-delay="200">
                     <li>
-                        <span class="filter" data-filter="all">All</span>
+                        <span class="filter" data-filter="all" data-toggle="tooltip" title="所有作品">All</span>
                     </li>
                     <li>
-                        <span class="filter" data-filter=".web">Web Desgin</span>
+                        <span class="filter" data-filter=".web" data-toggle="tooltip" title="網站設計">WEB DESGIN</span>
                     </li>
                     <li>
-                        <span class="filter" data-filter=".app">App Desgin</span>
+                        <span class="filter" data-filter=".app" data-toggle="tooltip" title="手機應用程式設計">APP DESGIN</span>
                     </li>
                     <li>
-                        <span class="filter" data-filter=".logo">Logo Desgin</span>
+                        <span class="filter" data-filter=".graphic" data-toggle="tooltip" title="平面設計">GRAPHIC DESIGN</span>
                     </li>
                 </ul>
-                <div id="portfoliolist">
+                <div id="portfoliolist" data-aos="fade-right" data-aos-delay="400">
                     <div class="portfolio web" data-cat="web">
-                        <figure class="portfolio-card" id="membercenter">
+                        <figure class="portfolio-card" id="euservice">
                             <div class="hovereffect">
-                                <img class="img-responsive" src="dist/img/portfollo/membercenter.png" alt="1111人力銀行 - 會員中心" loading="lazy">
+                                <img class="img-responsive" srcset="dist/img/portfollo/jobact.png 1x, dist/img/portfollo/jobact@2x.png 2x" src="dist/img/portfollo/jobact.png" alt="在職訓練網 - 地圖找課程" loading="lazy">
                                 <figcaption class="overlay web">
                                     <div class="hovereffect-title">
-                                        <h6>1111人力銀行 - 會員中心</h6>
+                                        <h6>台灣就業通 - 徵才活動</h6>
                                     </div>
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--primary inline-block mt-12">Web Design</label>
+                        <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
+                        <h6>台灣就業通 - 徵才活動</h6>
+                        <div class="description">UI/UX 設計(重新設計) — 網頁製作</div>
+                        <p>網站上線時間 2021 / 08</p>
+                        <a href="https://xd.adobe.com/view/91622eb4-5991-4e2a-bd7c-757c85f14c45-c431/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
+                        <a href="https://job.taiwanjobs.gov.tw/internet/jobwanted/JobOpeningL" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
+                    </div>
+                    <div class="portfolio web" data-cat="web">
+                        <figure class="portfolio-card" id="euservice">
+                            <div class="hovereffect">
+                                <img class="img-responsive" srcset="dist/img/portfollo/MapSch.png 1x, dist/img/portfollo/MapSch@2x.png 2x" src="dist/img/portfollo/MapSch.png" alt="在職訓練網 - 地圖找課程" loading="lazy">
+                                <figcaption class="overlay web">
+                                    <div class="hovereffect-title">
+                                        <h6>在職訓練網 - 地圖找課程</h6>
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                        <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
+                        <h6>在職訓練網 - 地圖找課程</h6>
+                        <div class="description">UI/UX 設計(重新設計) — 網頁製作</div>
+                        <p>網站上線時間 2021 / 08</p>
+                        <a href="https://xd.adobe.com/view/91622eb4-5991-4e2a-bd7c-757c85f14c45-c431/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
+                        <a href="https://ojt.wda.gov.tw/ClassMapSch" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
+                    </div>
+                    <div class="portfolio web" data-cat="web">
+                        <figure class="portfolio-card" id="euservice">
+                            <div class="hovereffect">
+                                <img class="img-responsive" srcset="dist/img/portfollo/euservice.png 1x, dist/img/portfollo/euservice@2x.png 2x" src="dist/img/portfollo/euservice.png" alt="醫事人員及醫事機構線上申辦系統" loading="lazy">
+                                <figcaption class="overlay web">
+                                    <div class="hovereffect-title">
+                                        <h6>醫事人員及醫事機構線上申辦系統</h6>
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                        <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
+                        <h6>醫事人員及醫事機構線上申辦系統</h6>
+                        <div class="description">UI/UX 設計(重新設計) — 網頁製作</div>
+                        <p>網站上線時間 2021 / 08</p>
+                        <a href="https://xd.adobe.com/view/91622eb4-5991-4e2a-bd7c-757c85f14c45-c431/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
+                        <a href="https://euservice.mohw.gov.tw/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
+                    </div>
+                    <div class="portfolio web" data-cat="web">
+                        <figure class="portfolio-card" id="membercenter">
+                            <div class="hovereffect">
+                                <img class="img-responsive" srcset="dist/img/portfollo/membercenter.png 1x, dist/img/portfollo/membercenter@2x.png 2x" src="dist/img/portfollo/membercenter.png" alt="1111人力銀行 - 會員中心" loading="lazy">
+                                <figcaption class="overlay web">
+                                    <div class="hovereffect-title">
+                                        <h6>新版會員中心</h6>
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                        <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
                         <h6>1111人力銀行 - 會員中心</h6>
+                        <div class="description">網站規劃 — UI/UX 設計 — 網頁製作 — 網站測試</div>
                         <p>網站上線時間 2020 / 07</p>
                         <a href="https://xd.adobe.com/view/91622eb4-5991-4e2a-bd7c-757c85f14c45-c431/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
                         <a href="https://www.1111.com.tw/membercenter/Index" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
@@ -475,19 +577,20 @@
                     <div class="portfolio web" data-cat="web">
                         <figure class="portfolio-card" id="vacancy">
                             <div class="hovereffect">
-                                <img class="img-responsive" src="dist/img/portfollo/vacancy.png" alt="1111人力銀行 - 職缺頁">
+                                <img class="img-responsive" srcset="dist/img/portfollo/vacancy.png 1x, dist/img/portfollo/vacancy@2x.png 2x" src="dist/img/portfollo/vacancy.png" alt="1111人力銀行 - 職缺頁">
                                 <figcaption class="overlay web">
                                     <div class="hovereffect-title">
-                                        <h6>1111人力銀行 - 職缺頁</h6>
+                                        <h6>職缺內容頁</h6>
                                     </div>
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--primary inline-block mt-12">Web Design</label>
+                        <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
                         <h6>1111人力銀行 - 職缺頁</h6>
+                        <div class="description">網站規劃 — UI/UX 設計 — 網頁製作</div>
                         <p>網站上線時間 2020 / 10</p>
                         <a href="https://xd.adobe.com/view/49a96d8e-75e9-4422-b7bd-ab1bc126dac0-1cfa/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
-                        <a href="https://www.1111.com.tw/job/91524962/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
+                        <a href="https://www.1111.com.tw/job/76689019/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
                         <a href="https://github.com/Barry028/JobBank" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
@@ -495,16 +598,17 @@
                     <div class="portfolio web" data-cat="web">
                         <figure class="portfolio-card" id="recruit">
                             <div class="hovereffect">
-                                <img class="img-responsive" src="dist/img/portfollo/recruit.png" alt="1111人力銀行 求才招募系統 (登入前)">
+                                <img class="img-responsive" srcset="dist/img/portfollo/recruit.png 1x, dist/img/portfollo/recruit@2x.png 2x" src="dist/img/portfollo/recruit.png" alt="1111人力銀行 求才招募系統 (登入前)">
                                 <figcaption class="overlay web">
                                     <div class="hovereffect-title">
-                                        <h6>1111人力銀行 - 求才招募系統</h6>
+                                        <h6>求才招募系統</h6>
                                     </div>
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--primary inline-block mt-12">Web Design</label>
-                        <h6>1111人力銀行 - 求才招募系統 (登入前)</h6>
+                        <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
+                        <h6>1111人力銀行 - 求才招募系統</h6>
+                        <div class="description">網站規劃 — UI/UX 設計 — 網頁製作 — 網站測試</div>
                         <p>網站上線時間 2019 / 02</p>
                         <a href="https://xd.adobe.com/view/c2fd0e48-ac8c-41fb-a786-a2c496b266ca-97ae/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
                         <a href="https://recruit.1111.com.tw/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
@@ -518,13 +622,14 @@
                                 <img class="img-responsive" src="dist/img/portfollo/hr.png" alt="1HR人資差勤系統">
                                 <figcaption class="overlay web">
                                     <div class="hovereffect-title">
-                                        <h6>1111人力銀行 - 1HR人資差勤系統 App 介紹</h6>
+                                        <h6>1HR人資差勤系統 介紹</h6>
                                     </div>
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--primary inline-block mt-12">Web Design</label>
-                        <h6>1111人力銀行 - 1HR人資差勤系統 App 介紹</h6>
+                        <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
+                        <h6>1HR人資差勤系統 App 介紹</h6>
+                        <div class="description">網頁製作</div>
                         <p>網站上線時間 2020 / 05</p>
                         <a href="https://xd.adobe.com/view/670de60d-ae80-4b82-81b9-84d7ed6d32c4-325e/" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
                         <a href="https://event.1111.com.tw/event20/1hr/promo/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
@@ -543,11 +648,11 @@
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--primary inline-block mt-12">Web Design</label>
+                        <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
                         <h6>臺南市 - 南瀛天文館</h6>
-                        <p>網站上線時間 今年5月才接的案子，尚未上線</p>
+                        <p>網站上線時間 2020 / 12</p>
                         <a href="https://xd.adobe.com/view/67989730-0753-42fc-a73b-8e0f7091c050-32cb/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
-                        <a href="https://gdemo.jie-heng.com.tw/taea_html/assets/index.html" class="btn btn--primary btn--sm mr-4" target="_blank">測試網址</a>
+                        <a href="https://taea.tn.edu.tw/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
                         <a href="https://github.com/Barry028/taea_html" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
@@ -563,11 +668,11 @@
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--primary inline-block mt-12">Web Design</label>
+                        <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
                         <h6>臺南市 - 兒童科學教育館</h6>
-                        <p>網站上線時間 今年5月才接的案子，尚未上線</p>
+                        <p>網站上線時間 2020 / 12</p>
                         <a href="https://xd.adobe.com/view/c47f15f0-dacc-4db7-a7d8-98b058fdce62-912c/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
-                        <a href="https://gdemo.jie-heng.com.tw/tscm_html/assets/index.html" class="btn btn--primary btn--sm mr-4" target="_blank">測試網址</a>
+                        <a href="https://tcsm.tn.edu.tw/kids" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
                         <a href="https://github.com/Barry028/tscm_html" class="btn btn--square btn--github" target="_blank">
                             <i class="ic-github" aria-hidden="true"></i>
                         </a>
@@ -583,9 +688,10 @@
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--primary inline-block mt-12">Web Design</label>
+                        <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
                         <h6>國立中正大學 登入口 (設計)</h6>
-                        <p>網站上線時間 今年5月才接的案子，尚未上線</p>
+                        <p>網站上線時間 2020 / 12</p>
+                        <a href="https://portal.ccu.edu.tw/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
                         <a href="https://xd.adobe.com/view/5176be5e-31c0-484b-a225-1d9585df91dc-0425/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
                     </div>
                     <div class="portfolio web" data-cat="web">
@@ -599,7 +705,7 @@
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--primary inline-block mt-12">Web Design</label>
+                        <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
                         <h6>Kokokara 購物網站</h6>
                         <p>網站上線時間 尚未上線</p>
                         <a href="https://xd.adobe.com/view/dc0d49e1-e7cd-41ab-8dd5-5a7621e29f9a-895e/screen/98b56323-b7c8-441b-9914-2b568fa07695" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
@@ -619,7 +725,7 @@
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--primary inline-block mt-12">Web Design</label>
+                        <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
                         <h6>中時集團 - TWKC 台灣權王</h6>
                         <p>網站上線時間 2019 (去年活動，製作像素風的網站以及遊戲)</p>
                         <a href="https://xd.adobe.com/view/b64879d1-5b49-48fb-613e-da76c2d26035-c079/" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
@@ -639,7 +745,7 @@
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--secondary inline-block mt-12">App Design</label>
+                        <label class="badge badge--secondary inline-block mt-12">APP DESGIN</label>
                         <h6>123 SHare App ReDesign (雙版本)</h6>
                         <p>上線時間 2018 / 05</p>
                         <a href="https://xd.adobe.com/view/96fab6b8-d925-48f9-9740-7f66689cdbb5-c3a9/grid" class="btn btn--border--secondary btn--sm mr-4" target="_blank">XD iOs</a>
@@ -656,7 +762,7 @@
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--secondary inline-block mt-12">App Design</label>
+                        <label class="badge badge--secondary inline-block mt-12">APP DESGIN</label>
                         <h6>瘋折扣 App ReDesign (雙版本)</h6>
                         <p>上線時間 2018 / 05</p>
                         <a href="https://xd.adobe.com/view/e66d5057-bf6a-4010-bb8b-3198eafa363c-b33e/grid" class="btn btn--border--secondary btn--sm mr-4" target="_blank">XD iOs</a>
@@ -673,7 +779,7 @@
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--secondary inline-block mt-12">App Design</label>
+                        <label class="badge badge--secondary inline-block mt-12">APP DESGIN</label>
                         <h6>瘋市場 App ReDesign (雙版本)</h6>
                         <p>上線時間 2018 / 05</p>
                         <a href="https://xd.adobe.com/view/80aa69e3-be2e-41f7-8517-bc46922f39da-d5f9/grid" class="btn btn--border--secondary btn--sm mr-4" target="_blank">XD iOs</a>
@@ -690,13 +796,13 @@
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--secondary inline-block mt-12">App Design</label>
+                        <label class="badge badge--secondary inline-block mt-12">APP DESGIN</label>
                         <h6>MyWeb App ReDesign (雙版本)</h6>
                         <p>上線時間 2018 / 05</p>
                         <a href="https://xd.adobe.com/view/247cfd17-d741-47ba-9e62-5932f170cfa7-712f/grid" class="btn btn--border--secondary btn--sm mr-4" target="_blank">XD iOs</a>
                         <a href="https://xd.adobe.com/view/23d9a811-6e7a-4677-b374-dc05ef0ce5c5-768a/grid" class="btn btn--border--secondary btn--sm" target="_blank">XD Android</a>
                     </div>
-                    <div class="portfolio logo" data-cat="logo">
+                    <div class="portfolio graphic" data-cat="graphic">
                         <figure class="portfolio-card">
                             <div class="hovereffect" id="onefix">
                                 <img class="img-responsive" src="dist/img/portfollo/onefix.png" alt="一修大師 CIS">
@@ -707,18 +813,20 @@
                                 </figcaption>
                             </div>
                         </figure>
-                        <label class="badge badge--info inline-block mt-12">Logo Design</label>
+                        <label class="badge badge--info inline-block mt-12">GRAPHIC DESIGN</label>
                         <h6>一修大師 CIS</h6>
                         <p>上線時間 2017</p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- 個人作品 End -->
         <hr>
-        <section class="re-block scrollspy" id="contact">
+        <!-- 留言給我 Start -->
+        <section class="re-block scroll_menu" id="contact">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="re-icon-heading-ver1">
+                    <div class="re-icon-heading-ver1" data-aos="fade-down">
                         <h3 class="re-icon-heading-ver1-hd" data-heading="contact">留言給我</h3>
                         <div class="re-icon-heading-ver1-bd">
                             <i class="ic-conversation" aria-hidden="true"></i>
@@ -727,11 +835,12 @@
                 </div>
                 <div class="row">
                     <form name="contact" method="POST" netlify data-netlify="true" data-netlify-recaptcha="true" id="contact-form" class="row contact-form">
-                        <div class="contact-img">
-                            <div class="mask mask_slash mask_dark--80"></div>
-                            <div class="contact-img-container" data-bg-img-src="dist/img/concept.jpg"></div>
+                        <div class="contact-img" data-aos="fade-right" data-aos-delay="200">
+                            <div class="mask mask_pal"></div>
+                            <div class="contact-img-container" data-bg-img-src="dist/img/contact_man.svg"></div>
+                            <h4>LEAVE ME A MESSAGE</h4>
                         </div>
-                        <div class="col-lg-6 col-sm-12">
+                        <div class="col-lg-6 col-sm-12" data-aos="fade-right" data-aos-delay="400">
                             <div class="form-group">
                                 <label for="name" class="block mb-12">
                                     <font class="text--danger">*</font>
@@ -753,7 +862,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-sm-12">
+                        <div class="col-lg-6 col-sm-12" data-aos="fade-right" data-aos-delay="400">
                             <div class="form-group">
                                 <label for="message" class="block mb-12">
                                     <font class="text--danger">*</font>
@@ -765,13 +874,16 @@
                                 </div>
                             </div>
                             <div data-netlify-recaptcha="true" class="form-row mb-16"></div>
-                            <button type="submit" class="btn btn--dark btn--block btn--md">送出留言</button>
+                            <button type="submit" class="btn btn--dark btn--block btn--icon btn--lg">
+                                <font>送出留言</font>
+                                <i class="ic-paperplane"></i>
+                            </button>
                         </div>
                     </form>
                 </div>
             </div>
-            </div>
         </section>
+        <!-- 留言給我 End -->
         <footer id="footer">
             © 2020 - <strong>BarrY</strong> Resume All Rights Reserved.
             <p class="push-right">建議瀏覽器版本 IE9.0 以上</p>
@@ -787,24 +899,166 @@
     <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Sweetalert2 -->
     <script type="text/javascript" src="vendor/sweetalert2/dist/sweetalert2.js"></script>
-    <!-- Appear Plugins -->
-    <script type="text/javascript" src="vendor/appear.js"></script>
-    <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
     <!-- mixItUp -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
     <!-- mCustomScrollbar -->
     <script type="text/javascript" src="vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-    <!-- Scrollspy -->
-    <script type="text/javascript" src="vendor/simple-scrollspy/dist/simple-scrollspy.min.js"></script>
     <!-- Loader -->
     <script type="text/javascript" src="js/components/pace.js"></script>
+    <!-- Appear Plugins -->
+    <script type="text/javascript" src="vendor/appear.js"></script>
     <!-- ProgressBar -->
-    <script type="text/javascript" src="js/components/BcprogressBar.js"></script>
+    <script type="text/javascript" src="js/components/progressBar.js"></script>
     <!-- GoTop -->
-    <script type="text/javascript" src="js/components/BcGotop.js"></script>
+    <script type="text/javascript" src="js/components/gotop.js"></script>
+    <!-- Aos Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Main -->
     <script type="text/javascript" src="js/main.js"></script>
+    <!-- JS Plugins -->
+    <script>
+    $(document).on('ready', function() {
+
+    });
+
+    $(window).on('load', function() {
+
+        $('.about-cnt h1').addClass('ani-type');
+
+        $('#redeMenu li').addClass('active-li');
+
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000,
+            offset: 200,
+        });
+
+        // attr valuenow add styles
+        $('.js-hr-progress-bar').each(function() {
+            var bar_value = $(this).find('.js-hr-progress-bar-indicator').attr('aria-valuenow') + '%';
+            $(this).find('.js-hr-progress-bar-indicator').css('width', bar_value);
+        });
+        // initialization of horizontal progress bars
+        setTimeout(function() {
+            var horizontalProgressBars = $.ProgressBar.init('.js-hr-progress-bar', {
+                direction: 'horizontal',
+                indicatorSelector: '.js-hr-progress-bar-indicator'
+            });
+        }, 1);
+    });
+
+    var portfolio = Swal.mixin({
+        showConfirmButton: false,
+        width: '80%'
+    });
+
+    $('#avatar').on('click', function() {
+        Swal.fire({
+            imageUrl: 'dist/img/me.jpg',
+            imageAlt: 'BarrY',
+            showConfirmButton: false
+        })
+    });
+
+    $('#membercenter').on('click', function() {
+        portfolio.fire({
+            html: '<img class="img-responsive" src="dist/img/portfollo/membercenter-f1.png" alt="membercenter">' +
+                '<img class="img-responsive" src="dist/img/portfollo/membercenter-f3.png" alt="membercenter">' +
+                '<img class="img-responsive" src="dist/img/portfollo/membercenter-f2.png" alt="membercenter">',
+
+        })
+    });
+
+    $('#vacancy').on('click', function() {
+        portfolio.fire({
+            imageUrl: 'dist/img/portfollo/vacancy-f.png',
+            showConfirmButton: false,
+        })
+    });
+
+    $('#recruit').on('click', function() {
+        portfolio.fire({
+            imageUrl: 'dist/img/portfollo/recruit-f.png',
+        })
+    });
+
+    $('#hr').on('click', function() {
+        portfolio.fire({
+            imageUrl: 'dist/img/portfollo/hr-f.png',
+            showConfirmButton: false,
+        })
+    });
+
+    $('#kokokara').on('click', function() {
+        portfolio.fire({
+            imageUrl: 'dist/img/portfollo/kokokara-f.png',
+            showConfirmButton: false,
+        })
+    });
+
+    $('#twkc').on('click', function() {
+        portfolio.fire({
+            imageUrl: 'dist/img/portfollo/twkc-f.png',
+            showConfirmButton: false,
+        })
+    });
+
+    $('#taea').on('click', function() {
+        portfolio.fire({
+            imageUrl: 'dist/img/portfollo/taea-f.png',
+            showConfirmButton: false,
+        })
+    });
+
+    $('#tscm').on('click', function() {
+        portfolio.fire({
+            imageUrl: 'dist/img/portfollo/tcsm-f.png',
+            showConfirmButton: false,
+        })
+    });
+
+    $('#ccu').on('click', function() {
+        portfolio.fire({
+            html: '<img class="img-responsive" src="dist/img/portfollo/ccu-f.png" alt="國立中正大學"><img class="img-responsive" src="dist/img/portfollo/ccu-1-f.png" alt="國立中正大學">',
+            showConfirmButton: false,
+        })
+    });
+
+    $('#123share').on('click', function() {
+        portfolio.fire({
+            html: '<img class="img-responsive" src="dist/img/portfollo/123Share-1.png" alt="123 SHare App ReDesign"><img class="img-responsive" src="dist/img/portfollo/123Share-2.png" alt="123 SHare App ReDesign"><img class="img-responsive" src="dist/img/portfollo/123Share-3.png" alt="123 SHare App ReDesign">',
+            showConfirmButton: false,
+        })
+    });
+
+    $('#coupon').on('click', function() {
+        portfolio.fire({
+            html: '<img class="img-responsive" src="dist/img/portfollo/ifansCouPon-1.png" alt="瘋折扣 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/ifansCouPon-2.png" alt="瘋折扣 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/ifansCouPon-3.png" alt="瘋折扣 App ReDesign">',
+            showConfirmButton: false,
+        })
+    });
+
+    $('#market').on('click', function() {
+        portfolio.fire({
+            html: '<img class="img-responsive" src="dist/img/portfollo/market-1.png" alt="瘋市場 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/market-2.png" alt="瘋市場 App ReDesign"><img class="img-responsive" src="dist/img/portfollo/market-3.png" alt="瘋市場 App ReDesign">',
+            showConfirmButton: false,
+        })
+    });
+
+    $('#myweb').on('click', function() {
+        portfolio.fire({
+            html: '<img class="img-responsive" src="dist/img/portfollo/MyWeb-1.png" alt="MyWeb App ReDesign"><img class="img-responsive" src="dist/img/portfollo/MyWeb-2.png" alt="MyWeb App ReDesign"><img class="img-responsive" src="dist/img/portfollo/MyWeb-3.png" alt="MyWeb App ReDesign">',
+            showConfirmButton: false,
+        })
+    });
+
+    $('#onefix').on('click', function() {
+        portfolio.fire({
+            html: '<img class="img-responsive" src="dist/img/portfollo/onefixCIS-01.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-02.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-03.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-04.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-05.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-06.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-07.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-08.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-09.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-10.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-11.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-12.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-13.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-14.png" alt="onefixCIS"><img class="img-responsive" src="dist/img/portfollo/onefixCIS-15.png" alt="onefixCIS">',
+            showConfirmButton: false,
+        })
+    });
+    </script>
 </body>
 
 </html>

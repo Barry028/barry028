@@ -30,7 +30,6 @@
 		"layout/burger",
 		"layout/margin",
 		"layout/padding",
-		"layout/utilities",
 		"layout/displays",
 		"layout/forms",
 		"layout/footer",
@@ -69,6 +68,12 @@
 
 //== Pages
 @import "pages/resume";
+
+//== AOS
+@import 'vendor/aos/core';
+@import 'vendor/aos/easing';
+@import 'vendor/aos/animations';
+
 
 
 
