@@ -64,7 +64,7 @@
               });
 
               $(window).on('load', function(e) {
-
+                $('#logo_loader').fadeOut();
                 $('#reAside').mCustomScrollbar({
                   axis: "y"
                 });
