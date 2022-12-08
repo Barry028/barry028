@@ -16,11 +16,6 @@
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <!-- CSS  -->
   <link rel="stylesheet" type="text/css" href="css/main.min.css">
-  <!--[if lte IE 9]>
-        <script src="vender/html5shiv/dist/html5shiv.min.js"></script>
-        <script src="vender/respond/dest/respond.min.js"></script>
-        <script src="vender/Placeholders/dist/placeholders.jquery.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
@@ -190,6 +185,7 @@
             <font>FrontEnd</font>
             <big>前端及網頁相關</big>
           </h4>
+          <!-- HTML5 -->
           <div class="col-lg-4 col-md-6">
             <div class="re-icon-heading-ver3">
               <img src="dist/img/html.svg" alt="html" class="re-skills-icon">
@@ -199,6 +195,7 @@
               </div>
             </div>
           </div>
+          <!-- CSS3 -->
           <div class="col-lg-4 col-md-6">
             <div class="re-icon-heading-ver3">
               <img src="dist/img/css.svg" alt="CSS3" class="re-skills-icon">
@@ -208,6 +205,7 @@
               </div>
             </div>
           </div>
+          <!-- JQUERY -->
           <div class="col-lg-4 col-md-6">
             <div class="re-icon-heading-ver3">
               <img src="dist/img/jquery.svg" alt="JQuery" class="re-skills-icon">
@@ -257,6 +255,15 @@
             <div class="re-icon-heading-ver3">
               <img src="dist/img/npm.svg" alt="npm" class="re-skills-icon">
               <h4 class="in-bk-mid">NPM</h4>
+              <div class="progress js-hr-progress-bar">
+                <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" title="35%" data-placement="right"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="re-icon-heading-ver3">
+              <img src="dist/img/webpack.svg" alt="npm" class="re-skills-icon">
+              <h4 class="in-bk-mid">WEBPACK</h4>
               <div class="progress js-hr-progress-bar">
                 <div class="progress-bar progress-bar-primary js-hr-progress-bar-indicator" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" title="35%" data-placement="right"></div>
               </div>
@@ -367,7 +374,7 @@
                   <li>・自從 2022.06 後，更新共用 Js 檔案，拔除 JQuery，使用原生 Js 撰寫，將一些通用功能寫成獨立組件，並且大部分透過在 HTML 標籤上加上相對應規則即可調用 <font class="text--info">(data-***="???")</font>
                     <ul class="ml-12 pt-8 text--black">
                       <li>
-                         <b>1.</b> 常用類型：彈窗組件、延遲加載 <font class="text--lightgrey">(lazyload)</font>、無限滾動、滾動觸發動畫組件、暗黑模式切換<font class="text--lightgrey">(搭配 Scss & Css Variables)</font>、Go Top 組件、Youtube 截圖、數字三位一撇
+                        <b>1.</b> 常用類型：彈窗組件、延遲加載 <font class="text--lightgrey">(lazyload)</font>、無限滾動、滾動觸發動畫組件、暗黑模式切換<font class="text--lightgrey">(搭配 Scss & Css Variables)</font>、Go Top 組件、Youtube 截圖、數字三位一撇
                       </li>
                       <li>
                         <b>2.</b> 佈局類型：滾動黏性盒子組件、自動產生監聽導航選單、Drowdown Menu 組件、產生代圖以及文字<font class="text--lightgrey">(用於大頭照｜Layout 說明)</font>
@@ -382,7 +389,6 @@
                         <b>5.</b> 表單類型：輸入框遮罩、計算輸入框字數、Table 排序、視覺化編輯表單、即時上傳圖片
                       </li>
                     </ul>
-                   
                   </li>
                 </ul>
               </div>
@@ -527,8 +533,77 @@
           <li>
             <span class="filter" data-filter=".graphic" data-toggle="tooltip" title="平面設計">GRAPHIC DESIGN</span>
           </li>
+          <li>
+            <span class="filter" data-filter=".widget" data-toggle="tooltip" title="自製小工具">WIDGET</span>
+          </li>
         </ul>
         <div id="portfoliolist" data-aos="fade-right" data-aos-delay="400">
+          <div class="portfolio widget" data-cat="widget">
+            <figure class="portfolio-card" id="taiwanjobs">
+              <div class="hovereffect">
+                <img class="img-responsive" srcset="dist/img/portfollo/widget.png 1x, dist/img/portfollo/widget@2x.png 2x" src="dist/img/portfollo/widget.png" alt="原生 JS 寫出來的類 JQuery 選擇器" loading="lazy">
+                <figcaption class="overlay widget not-allowed">
+                  <div class="hovereffect-title">
+                    <h6>原生 JS 常用工具函式封裝</h6>
+                  </div>
+                </figcaption>
+              </div>
+            </figure>
+            <label class="badge badge--success inline-block mt-12">WIDGET</label>
+            <h6>自製工具、功能、樣式整理</h6>
+            <div class="description">
+              有些工作可以先準備好或是寫個小程式就可以省去自己很多事情。
+              <!-- <br><br>
+              例如：我都使用 XD 畫 UI 介面，有時候我想要抓一大批的顏色陣列 (又不想等導出的時間)，但軟體內沒有這個外掛，就自己寫一下 JS，當我複製 XD 的一批色票後幫我直接轉 Array。
+              <br><br>
+              諸如此類的情形，寫個小工具又可以順便訓練自己的 JS !!
+              <br><br> -->
+              <br>
+              Git 裡面自己整理了 --> 類 JQUERY 工具函數、常用工具函數、圖床、Pollyfills、iconFont、雛形模板 等等。</div>
+            <a href="https://codepen.io/barry199002/pen/WNzOQvV/20b53887d3c6e524bf405451aa7400f2" class="btn btn--border--primary btn--sm mr-4" target="_blank">勞動力發展署LOGO編輯工具</a>
+            <br>
+            <p>(今年發展署剛換 LOGO，結果到處有工程師跑來要新的 LOGO，才寫了這個小功能，讓不管 PM、工程師或是承辦人都可以自己來)</p>
+            <a href="https://codepen.io/barry199002/full/KKojxXX/13341a19a81088f2e3546004117a64e4" class="btn btn--border--primary btn--sm mr-4" target="_blank">圖床整理</a>
+            <a href="https://github.com/Barry028/TurboFrame/blob/main/shares/js/turboframe_bundle.min.js" class="btn btn--github" target="_blank">
+              <i class="ic-github" aria-hidden="true"></i> 工具函式封裝
+            </a>
+          </div>
+          <!-- 關鍵就業力課程 -->
+          <div class="portfolio web" data-cat="web">
+            <figure class="portfolio-card" id="taiwanjobs">
+              <div class="hovereffect">
+                <img class="img-responsive" srcset="dist/img/portfollo/wda.png 1x, dist/img/portfollo/wda@2x.png 2x" src="dist/img/portfollo/wda.png" alt="關鍵就業力課程" loading="lazy">
+                <figcaption class="overlay web not-allowed">
+                  <div class="hovereffect-title">
+                    <h6>關鍵就業力課程</h6>
+                  </div>
+                </figcaption>
+              </div>
+            </figure>
+            <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
+            <h6>關鍵就業力課程</h6>
+            <div class="description">UI/UX 設計(全新網站設計) — 網頁製作 － 設計規範製作 － 通用組件製作</div>
+            <p><big class="text--danger">尚未上線</big> -- 2022.11，後端開始進行串接。</p>
+            <a href="https://xd.adobe.com/view/55a7c09e-b96d-49fb-a84f-1a5b3835cff9-00f4/flow" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD 展示</a>
+          </div>
+          <!-- 勞動力發展署職業訓練視覺化分析平台 -->
+          <div class="portfolio web" data-cat="web">
+            <figure class="portfolio-card" id="taiwanjobs">
+              <div class="hovereffect">
+                <img class="img-responsive" srcset="dist/img/portfollo/data.png 1x, dist/img/portfollo/data@2x.png 2x" src="dist/img/portfollo/data.png" alt="勞動力發展署職業訓練視覺化分析平台" loading="lazy">
+                <figcaption class="overlay web not-allowed">
+                  <div class="hovereffect-title">
+                    <h6>職業訓練視覺化分析平台</h6>
+                  </div>
+                </figcaption>
+              </div>
+            </figure>
+            <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
+            <h6>職業訓練視覺化分析平台</h6>
+            <div class="description">UI/UX 設計(全新網站設計) — 網頁製作 － 設計規範製作 － 通用組件製作</div>
+            <p><big class="text--danger">尚未上線</big> -- 2022.10，後端開始進行串接。</p>
+            <a href="https://xd.adobe.com/view/0e369a9c-069b-42e0-8e53-0d308bcf1ee4-5b65/flow" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD 展示</a>
+          </div>
           <!-- 台灣就業通 -->
           <div class="portfolio web" data-cat="web">
             <figure class="portfolio-card" id="taiwanjobs">
@@ -544,7 +619,7 @@
             <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
             <h6>台灣就業通</h6>
             <div class="description">UI/UX 設計(重新設計) — 網頁製作 － 設計規範製作 － 通用組件製作</div>
-            <p>網站上線時間 2022.11，後端開始進行串接。</p>
+            <p><big class="text--danger">尚未上線</big> -- 2022.11，後端開始進行串接。</p>
             <a href="https://xd.adobe.com/view/0e369a9c-069b-42e0-8e53-0d308bcf1ee4-5b65/flow" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD 展示</a>
           </div>
           <!-- 集中檢疫所線上刷卡繳費平台 -->
@@ -580,7 +655,24 @@
             <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
             <h6>防疫旅館春節專案</h6>
             <div class="description">UI/UX 設計(重新設計) — 網頁製作</div>
-            <p>網站上線時間 2021.12 上線，現階段為 集中檢疫所線上刷卡繳費平台</p>
+            <p>網站上線時間 2021.12 上線，現階段已更新成「集中檢疫所線上刷卡繳費平台」</p>
+          </div>
+          <!-- 原住民族委員會－印刷品 -->
+          <div class="portfolio graphic" data-cat="graphic">
+            <figure class="portfolio-card">
+              <div class="hovereffect" id="cip">
+                <img class="img-responsive" src="dist/img/portfollo/cip.png" alt="原住民族委員會－印刷品">
+                <figcaption class="overlay logo">
+                  <div class="hovereffect-title">
+                    <h6>原住民族委員會－印刷品</h6>
+                  </div>
+                </figcaption>
+              </div>
+            </figure>
+            <label class="badge badge--info inline-block mt-12">GRAPHIC DESIGN</label>
+            <h6>原住民族委員會－印刷品</h6>
+            <div class="description">文宣印刷、識別套掛帶、纖維清潔布</div>
+            <p>製作時間 2021.12</p>
           </div>
           <!-- 原住民人力資源網 -->
           <div class="portfolio web" data-cat="web">
@@ -596,7 +688,7 @@
             </figure>
             <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
             <h6>原住民人力資源網 (職缺快報、地圖找工作、動態報表) </h6>
-            <div class="description">UI/UX 設計(職缺快報、地圖找工作、動態報表) — 網頁製作</div>
+            <div class="description">UI/UX 設計(職缺快報、地圖找工作、動態報表) — 網頁製作 － 無障礙、選單組件製作以及圖表套用</div>
             <p>網站上線時間 2022.03</p>
             <a href="https://iwork.cip.gov.tw/A3/C102M" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
           </div>
@@ -614,7 +706,7 @@
             </figure>
             <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
             <h6>職務再設計</h6>
-            <div class="description">UI/UX 設計(前台重新規劃) — 網頁製作 － 設計規範製作</div>
+            <div class="description">UI/UX 設計(前台重新規劃設計) — 網頁製作 － 設計規範製作 － 前端互動設計 － 表單驗證</div>
             <p>網站上線時間 2021.12</p>
             <a href="https://jobacmd.wda.gov.tw/DJOB_WEB/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
           </div>
@@ -634,7 +726,7 @@
             <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
             <h6>勞動部因應嚴重特殊傳染性肺炎影響
               辦理在職勞工勞工生活補貼線上申辦系統</h6>
-            <div class="description">UI/UX 設計(前台重新規劃) — 網頁製作</div>
+            <div class="description">UI/UX 設計(全新網站設計) — 網頁製作 － 表單設計</div>
             <p>網站上線時間 2021.08</p>
             <a href="https://www.alberthsieh.com/49800/mol-10000" class="btn btn--primary btn--sm mr-4" target="_blank">網站已下線（此連結為網路教學文章）</a>
           </div>
@@ -652,11 +744,12 @@
             </figure>
             <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
             <h6>台灣就業通 - 徵才活動</h6>
-            <div class="description">UI/UX 設計(重新設計) — 網頁製作</div>
+            <div class="description">UI/UX 設計(重新設計) — 網頁製作 － 兩層分類選單套件撰寫</div>
             <p>網站上線時間 2021 / 08</p>
             <a href="https://xd.adobe.com/view/91622eb4-5991-4e2a-bd7c-757c85f14c45-c431/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
             <a href="https://job.taiwanjobs.gov.tw/internet/jobwanted/JobOpeningList2.aspx" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
           </div>
+          <!-- 在職訓練網 - 地圖找課程 -->
           <div class="portfolio web" data-cat="web">
             <figure class="portfolio-card" id="euservice">
               <div class="hovereffect">
@@ -670,11 +763,11 @@
             </figure>
             <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
             <h6>在職訓練網 - 地圖找課程</h6>
-            <div class="description">UI/UX 設計(重新設計) — 網頁製作</div>
+            <div class="description">UI/UX 設計(版面調整) — 網頁製作 － 無障礙設計</div>
             <p>網站上線時間 2021 / 08</p>
-            <a href="https://xd.adobe.com/view/91622eb4-5991-4e2a-bd7c-757c85f14c45-c431/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
             <a href="https://ojt.wda.gov.tw/ClassMapSch" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
           </div>
+          <!-- 醫事人員及醫事機構線上申辦系統 -->
           <div class="portfolio web" data-cat="web">
             <figure class="portfolio-card" id="euservice">
               <div class="hovereffect">
@@ -688,11 +781,12 @@
             </figure>
             <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
             <h6>醫事人員及醫事機構線上申辦系統</h6>
-            <div class="description">UI/UX 設計(重新設計) — 網頁製作</div>
+            <div class="description">UI/UX 設計(全新網站設計) — 網頁製作</div>
             <p>網站上線時間 2021 / 08</p>
             <a href="https://xd.adobe.com/view/91622eb4-5991-4e2a-bd7c-757c85f14c45-c431/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
             <a href="https://euservice.mohw.gov.tw/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
           </div>
+          <!-- 1111人力銀行 - 會員中心 -->
           <div class="portfolio web" data-cat="web">
             <figure class="portfolio-card" id="membercenter">
               <div class="hovereffect">
@@ -714,6 +808,7 @@
               <i class="ic-github" aria-hidden="true"></i>
             </a>
           </div>
+          <!-- 1111人力銀行 - 職缺頁 -->
           <div class="portfolio web" data-cat="web">
             <figure class="portfolio-card" id="vacancy">
               <div class="hovereffect">
@@ -735,6 +830,7 @@
               <i class="ic-github" aria-hidden="true"></i>
             </a>
           </div>
+          <!-- 求才招募系統 -->
           <div class="portfolio web" data-cat="web">
             <figure class="portfolio-card" id="recruit">
               <div class="hovereffect">
@@ -756,27 +852,7 @@
               <i class="ic-github" aria-hidden="true"></i>
             </a>
           </div>
-          <div class="portfolio web" data-cat="web">
-            <figure class="portfolio-card" id="hr">
-              <div class="hovereffect">
-                <img class="img-responsive" src="dist/img/portfollo/hr.png" alt="1HR人資差勤系統">
-                <figcaption class="overlay web">
-                  <div class="hovereffect-title">
-                    <h6>1HR人資差勤系統 介紹</h6>
-                  </div>
-                </figcaption>
-              </div>
-            </figure>
-            <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
-            <h6>1HR人資差勤系統 App 介紹</h6>
-            <div class="description">網頁製作</div>
-            <p>網站上線時間 2020 / 05</p>
-            <a href="https://xd.adobe.com/view/670de60d-ae80-4b82-81b9-84d7ed6d32c4-325e/" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
-            <a href="https://event.1111.com.tw/event20/1hr/promo/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
-            <a href="https://github.com/Barry028/eHrApp" class="btn btn--square btn--github" target="_blank">
-              <i class="ic-github" aria-hidden="true"></i>
-            </a>
-          </div>
+          <!-- 臺南市 - 南瀛天文館 -->
           <div class="portfolio web" data-cat="web">
             <figure class="portfolio-card" id="taea">
               <div class="hovereffect">
@@ -798,6 +874,7 @@
               <i class="ic-github" aria-hidden="true"></i>
             </a>
           </div>
+          <!-- 臺南市 - 兒童科學教育館 -->
           <div class="portfolio web" data-cat="web">
             <figure class="portfolio-card" id="tscm">
               <div class="hovereffect">
@@ -819,6 +896,7 @@
               <i class="ic-github" aria-hidden="true"></i>
             </a>
           </div>
+          <!-- 國立中正大學 登入口 (設計) -->
           <div class="portfolio web" data-cat="web">
             <figure class="portfolio-card" id="ccu">
               <div class="hovereffect">
@@ -837,6 +915,7 @@
             <a href="https://portal.ccu.edu.tw/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
             <a href="https://xd.adobe.com/view/5176be5e-31c0-484b-a225-1d9585df91dc-0425/grid" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
           </div>
+          <!-- Kokokara 購物網站 -->
           <div class="portfolio web" data-cat="web">
             <figure class="portfolio-card" id="kokokara">
               <div class="hovereffect">
@@ -853,11 +932,12 @@
             <div class="description">介面設計、網頁製作</div>
             <p>網站上線時間 尚未上線</p>
             <a href="https://xd.adobe.com/view/dc0d49e1-e7cd-41ab-8dd5-5a7621e29f9a-895e/screen/98b56323-b7c8-441b-9914-2b568fa07695" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
-            <a href="http://210.65.47.72/kokokara_html/" class="btn btn--primary btn--sm mr-4" target="_blank">測試網址</a>
+            <!-- <a href="http://210.65.47.72/kokokara_html/" class="btn btn--primary btn--sm mr-4" target="_blank">測試網址</a> -->
             <a href="https://github.com/Barry028/kokokara" class="btn btn--square btn--github" target="_blank">
               <i class="ic-github" aria-hidden="true"></i>
             </a>
           </div>
+          <!-- TWKC 台灣權王 -->
           <div class="portfolio web" data-cat="web">
             <figure class="portfolio-card" id="twkc">
               <div class="hovereffect">
@@ -870,7 +950,7 @@
               </div>
             </figure>
             <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
-            <h6>中時集團 - TWKC 台灣權王</h6>
+            <h6>中時集團 - TWKC 台灣權王 像素風格</h6>
             <div class="description">介面設計、網頁製作</div>
             <p>網站上線時間 2019 (去年活動，製作像素風的網站以及遊戲)</p>
             <a href="https://xd.adobe.com/view/b64879d1-5b49-48fb-613e-da76c2d26035-c079/" class="btn btn--border--primary btn--sm mr-4" target="_blank">XD展示</a>
@@ -879,6 +959,28 @@
               <i class="ic-github" aria-hidden="true"></i>
             </a>
           </div>
+          <!-- 一修大師  -->
+          <div class="portfolio web" data-cat="web">
+            <figure class="portfolio-card" id="one fix">
+              <div class="hovereffect">
+                <img class="img-responsive" src="dist/img/portfollo/onefixweb.png" alt="TWKC 台灣權王">
+                <figcaption class="overlay web">
+                  <div class="hovereffect-title">
+                    <h6>一修大師</h6>
+                  </div>
+                </figcaption>
+              </div>
+            </figure>
+            <label class="badge badge--primary inline-block mt-12">WEB DESGIN</label>
+            <h6>一修大師 形象網站</h6>
+            <div class="description">介面設計、網頁製作</div>
+            <p>網站上線時間 2021</p>
+            <a href="https://one-fix.tw/" class="btn btn--primary btn--sm mr-4" target="_blank">上線網址</a>
+            <a href="https://github.com/Barry028/Onefix" class="btn btn--square btn--github" target="_blank">
+              <i class="ic-github" aria-hidden="true"></i>
+            </a>
+          </div>
+          <!-- 123 SHare App -->
           <div class="portfolio app" data-cat="app">
             <figure class="portfolio-card" id="123share">
               <div class="hovereffect">
@@ -897,6 +999,7 @@
             <a href="https://xd.adobe.com/view/96fab6b8-d925-48f9-9740-7f66689cdbb5-c3a9/grid" class="btn btn--border--secondary btn--sm mr-4" target="_blank">XD iOs</a>
             <a href="https://xd.adobe.com/view/66f60824-3880-48da-bbe6-88bec18725c6-33a5/grid" class="btn btn--border--secondary btn--sm" target="_blank">XD Android</a>
           </div>
+          <!-- 瘋折扣 App ReDesign -->
           <div class="portfolio app" data-cat="app">
             <figure class="portfolio-card" id="coupon">
               <div class="hovereffect">
@@ -915,6 +1018,7 @@
             <a href="https://xd.adobe.com/view/e66d5057-bf6a-4010-bb8b-3198eafa363c-b33e/grid" class="btn btn--border--secondary btn--sm mr-4" target="_blank">XD iOs</a>
             <a href="https://xd.adobe.com/view/7c8eb245-9949-46d5-a232-45d6da5515c8-29dd/grid" class="btn btn--border--secondary btn--sm" target="_blank">XD Android</a>
           </div>
+          <!-- 瘋市場 App ReDesign -->
           <div class="portfolio app" data-cat="app">
             <figure class="portfolio-card" id="market">
               <div class="hovereffect">
@@ -933,6 +1037,7 @@
             <a href="https://xd.adobe.com/view/80aa69e3-be2e-41f7-8517-bc46922f39da-d5f9/grid" class="btn btn--border--secondary btn--sm mr-4" target="_blank">XD iOs</a>
             <a href="https://xd.adobe.com/view/589c277b-e99c-499b-a94f-f91795d4f905-0dcf/grid" class="btn btn--border--secondary btn--sm" target="_blank">XD Android</a>
           </div>
+          <!-- MyWeb App ReDesign -->
           <div class="portfolio app" data-cat="app">
             <figure class="portfolio-card" id="myweb">
               <div class="hovereffect">
@@ -951,6 +1056,7 @@
             <a href="https://xd.adobe.com/view/247cfd17-d741-47ba-9e62-5932f170cfa7-712f/grid" class="btn btn--border--secondary btn--sm mr-4" target="_blank">XD iOs</a>
             <a href="https://xd.adobe.com/view/23d9a811-6e7a-4677-b374-dc05ef0ce5c5-768a/grid" class="btn btn--border--secondary btn--sm" target="_blank">XD Android</a>
           </div>
+          <!-- 一修大師 CIS -->
           <div class="portfolio graphic" data-cat="graphic">
             <figure class="portfolio-card">
               <div class="hovereffect" id="onefix">
@@ -1044,7 +1150,7 @@
     <i class="ic-upload"></i>
     <font>回頂端</font>
   </button>
-  '<div id="logo_loader">
+  <div id="logo_loader">
     <div class="loader-cnt">
       <div class="loader">
         <svg viewBox="0 0 80 80">

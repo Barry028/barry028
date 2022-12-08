@@ -825,7 +825,9 @@
             &.logo {
               background-color: rgba($info, 0.8);
             }
-
+            &.widget {
+              background-color: rgba($success, 0.8);
+            }
             .hovereffect-title {
               color: $white;
 
