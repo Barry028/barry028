@@ -192,6 +192,18 @@
   cursor: not-allowed;
 }
 
+.b-underline {
+  text-decoration: underline;
+  text-decoration-color: lighten($primary, 30%);
+  text-decoration-style: wavy;
+  text-decoration-offset: 4px;
+  transition: $transition-base;
+
+  &:hover {
+    text-decoration-color: darken($secondary, 8%);
+  }
+}
+
 img:not([src]),
 img[src=""] {
   filter: blur(0.5px);
