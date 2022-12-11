@@ -139,7 +139,10 @@
     h6 {
       font-size: 1.125rem;
       margin-top: .5rem;
-   
+
+      small {
+        color: $grey;
+      }
     }
 
     .description {
@@ -167,6 +170,7 @@
         height: 1rem;
         display: inline-block;
         vertical-align: bottom;
+
         // filter: grayscale(1);
         transition: $transition-base;
         margin-right: .25rem;

@@ -112,7 +112,32 @@
           })
         });
 
-        // TaiwanJobs https://xd.adobe.com/view/87201462-e071-440d-b062-5358a05ef59f-d273/
+        // wdaCoueseFront
+        $('#wdaCoueseFront').on('click', function() {
+          portfolio.fire({
+            html: 
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 1.jpg" alt="wdaCouese">' +
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 2.jpg" alt="wdaCouese">' +
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 3.jpg" alt="wdaCouese">' +
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 4.jpg" alt="wdaCouese">' +
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 5.jpg" alt="wdaCouese">' +
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 6.jpg" alt="wdaCouese">' +
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 7.jpg" alt="wdaCouese">' ,
+          })
+        });
+        // wdaCoueseBackend
+        $('#wdaCoueseBackend').on('click', function() {
+          portfolio.fire({
+            html: 
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 1.jpg" alt="wdaCouese">' +
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 2.jpg" alt="wdaCouese">' +
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 3.jpg" alt="wdaCouese">' +
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 4.jpg" alt="wdaCouese">' +
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 5.jpg" alt="wdaCouese">' +
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 6.jpg" alt="wdaCouese">' +
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 7.jpg" alt="wdaCouese">' ,
+          })
+        });
         $('#taiwanJobs').on('click', function() {
           portfolio.fire({
             html: '<iframe width="100%" height="644" src="https://xd.adobe.com/embed/87201462-e071-440d-b062-5358a05ef59f-d273/" frameborder="0" allowfullscreen></iframe>',
