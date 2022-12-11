@@ -18,8 +18,7 @@
 		"base/typography";
 
 //== Vendor
-@import "vendor/mCustomScrollbar",
-		"vendor/sweetalert2";
+@import "vendor/mCustomScrollbar";
 
 //== Layout
 @import "layout/grid",
@@ -44,10 +43,8 @@
 		"components/boxShadows",
 		"components/buttons",
 		"components/cards",
-		"components/category-picker",
 		"components/images",
 		"components/inputs",
-		"components/lists",
 		"components/masks",
 		"components/modals",
 		"components/opacitys",
@@ -62,12 +59,13 @@
 		"components/tabs",
 		"components/texts",
 		"components/toasts",
-		"components/toggles",
 		"components/transition",
 		"components/tooltips";
 
 //== Pages
 @import "pages/resume";
+@import "pages/resumeSide";
+@import "pages/_resumeComponent";
 
 //== AOS
 @import 'vendor/aos/core';
