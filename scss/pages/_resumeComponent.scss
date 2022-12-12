@@ -32,7 +32,9 @@
         border: 1px solid $primary;
         color: $white;
         font-size: 1.125rem;
+
         @include text-comic($dark);
+
         letter-spacing: 1.5px;
 
         &:hover {
@@ -252,6 +254,7 @@
     right: -6rem;
     opacity: 0.48;
   }
+
   @media (max-width: $screen-xs-min) {
     transform: translate3d(0, 0, 0) scale(1) rotate(-30deg);
     right: -8rem;
@@ -274,10 +277,18 @@
 }
 
 .mask.mask_wave_svg.mask_wave_svg {
-  background-position: -2rem 2rem;
+  background-position: 105% 2rem;
   background-size: 120%;
-  background-image: url("data:image/svg+xml, %3Csvg id='waves' viewBox='0 0 1046 475' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E %23waves %7B stroke-dasharray: 3874 3874; stroke-dashoffset: 3874; animation: animation11 2s linear forwards; %7D @keyframes animation11 %7B to %7B stroke-dashoffset: 0; %7D %7D %3C/style%3E%3Cpath d='m1 283.595 114.675-3.489A424.157 424.157 0 0 0 389.52 168.698l51.329-47.09C534.226 35.943 661.013-3.486 786.503 14.114L1000.23 44.09' stroke='url(%23a)' stroke-width='19.961' /%3E%3Cpath d='m23.006 374.016 114.674-3.489a424.157 424.157 0 0 0 273.845-111.408l51.329-47.09c93.377-85.665 220.164-125.094 345.655-107.494l213.731 29.976' stroke='url(%23b)' stroke-width='19.961' /%3E%3Cpath d='m45.011 464.437 114.675-3.489A424.157 424.157 0 0 0 433.531 349.54l51.329-47.09c93.376-85.664 220.163-125.093 345.654-107.493l213.726 29.975' stroke='url(%23c)' stroke-width='19.961' /%3E%3Cdefs%3E%3ClinearGradient id='a' x1='662.878' y1='-323.635' x2='.991' y2='283.585' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFFDAD' /%3E%3Cstop offset='.505' stop-color='%2353AD8C' /%3E%3Cstop offset='1' stop-color='%23505694' /%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='684.883' y1='-233.214' x2='22.997' y2='374.006' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFFDAD' /%3E%3Cstop offset='.505' stop-color='%2353AD8C' /%3E%3Cstop offset='1' stop-color='%23505694' /%3E%3C/linearGradient%3E%3ClinearGradient id='c' x1='706.889' y1='-142.793' x2='45.002' y2='464.427' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFFDAD' /%3E%3Cstop offset='.505' stop-color='%2353AD8C' /%3E%3Cstop offset='1' stop-color='%23505694' /%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml, %3Csvg id='waves' viewBox='0 0 1046 475' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E %23waves %7B stroke-dasharray: 3874 3874; stroke-dashoffset: 3874; animation: animation11 4s 2s linear forwards; %7D @keyframes animation11 %7B to %7B stroke-dashoffset: 0; %7D %7D %3C/style%3E%3Cpath d='m1 283.595 114.675-3.489A424.157 424.157 0 0 0 389.52 168.698l51.329-47.09C534.226 35.943 661.013-3.486 786.503 14.114L1000.23 44.09' stroke='url(%23a)' stroke-width='19.961' /%3E%3Cpath d='m23.006 374.016 114.674-3.489a424.157 424.157 0 0 0 273.845-111.408l51.329-47.09c93.377-85.665 220.164-125.094 345.655-107.494l213.731 29.976' stroke='url(%23b)' stroke-width='19.961' /%3E%3Cpath d='m45.011 464.437 114.675-3.489A424.157 424.157 0 0 0 433.531 349.54l51.329-47.09c93.376-85.664 220.163-125.093 345.654-107.493l213.726 29.975' stroke='url(%23c)' stroke-width='19.961' /%3E%3Cdefs%3E%3ClinearGradient id='a' x1='662.878' y1='-323.635' x2='.991' y2='283.585' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFFDAD' /%3E%3Cstop offset='.505' stop-color='%2353AD8C' /%3E%3Cstop offset='1' stop-color='%23505694' /%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='684.883' y1='-233.214' x2='22.997' y2='374.006' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFFDAD' /%3E%3Cstop offset='.505' stop-color='%2353AD8C' /%3E%3Cstop offset='1' stop-color='%23505694' /%3E%3C/linearGradient%3E%3ClinearGradient id='c' x1='706.889' y1='-142.793' x2='45.002' y2='464.427' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFFDAD' /%3E%3Cstop offset='.505' stop-color='%2353AD8C' /%3E%3Cstop offset='1' stop-color='%23505694' /%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
   opacity: 0.12;
+}
+
+.mask.mask_loop_svg.mask_loop_svg {
+  background-position: right -4rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.24;
+  background-image: url("data:image/svg+xml, %3Csvg id='loops' width='550' height='470' viewBox='85 76 560 570' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E svg %7B stroke-dasharray: 3874 3874; stroke-dashoffset: 3874; animation: loops 4s 2s linear forwards; %7D @keyframes loops %7B to %7B stroke-dashoffset: 0; %7D %7D %3C/style%3E%3Ccircle cx='579.788' cy='193.417' r='102.698' transform='rotate(59.9912 579.788 193.417)' stroke='url(%23paint0_linear)' stroke-width='24' /%3E%3Cpath d='M365.993 455.739C326.776 478.389 277.513 465.523 255.737 427.819C233.961 390.115 247.435 341.015 286.652 318.366C325.868 295.716 375.131 308.582 396.907 346.286C418.683 383.99 405.209 433.09 365.993 455.739Z' stroke='url(%23paint1_linear)' stroke-width='24' /%3E%3Cpath d='M136.414 622.08C107.015 639.059 70.0846 629.314 53.7373 601.01C37.39 572.705 47.4044 535.847 76.8033 518.868C106.202 501.888 143.133 511.633 159.48 539.938C175.827 568.242 165.813 605.1 136.414 622.08Z' stroke='url(%23paint2_linear)' stroke-width='24' /%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='694.486' y1='78.7135' x2='465.091' y2='78.7135' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%233BC9DB' /%3E%3Cstop offset='0.46875' stop-color='%23E3FAFC' /%3E%3Cstop offset='1' stop-color='%23C5F6FA' /%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='452.975' y1='419.36' x2='361.631' y2='261.203' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%233BC9DB' /%3E%3Cstop offset='0.46875' stop-color='%23E3FAFC' /%3E%3Cstop offset='1' stop-color='%23C5F6FA' /%3E%3C/linearGradient%3E%3ClinearGradient id='paint2_linear' x1='205.682' y1='595.931' x2='134.068' y2='471.937' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%233BC9DB' /%3E%3Cstop offset='0.46875' stop-color='%23E3FAFC' /%3E%3Cstop offset='1' stop-color='%23C5F6FA' /%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
 }
 
 .mask.mask_geometry_ani.mask_geometry_ani {
