@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-/** –––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 //  Pages > Resume
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .re-side-bar {
   position: fixed;
   width: 16rem;
@@ -23,13 +23,8 @@
   .re-side-nav {
     text-align: center;
 
-    .hide-menu-tool {
-      position: absolute;
-      right: 0;
-    }
-
-    .side-img {
-      margin: 2rem 4rem;
+    .re-side-img {
+      margin: 2rem 4rem 0 4rem;
       cursor: pointer;
       transform: translate(-100%);
       animation: sections-nav-item 0.35s cubic-bezier(0.75, 0, 0.45, 1.1) forwards;
@@ -69,7 +64,7 @@
         width: 100%;
       }
 
-      .side-img-container {
+      .re-side-img-container {
         background-size: cover;
         background-position: center top;
         position: absolute;
@@ -78,19 +73,49 @@
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        border: 2px solid $white;
+        border: 2px solid rgba($white, 0.4);
 
         @media all and (max-width: $screen-sm-min) {
           border: 0;
         }
+
+        &:before {
+          content: '';
+          display: block;
+          width: 107.5%;
+          height: 107.5%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border: 2px solid rgba($primary , 0.6);
+          border-radius: 50%;
+        }
       }
     }
 
-    #redeMenu {
+    .re-side-user {
+      margin-top: -0.5rem;
+      margin-bottom: 2rem;
+      display: inline-block;
+      color: $white;
+      background-color: darken($primary, 10);
+      font-weight: 900;
+      border: 2px dashed darken($dark, 0);
+      border-radius: 4px;
+      letter-spacing: 1.5px;
+      padding: 0.5rem 1rem;
+
+      @media all and (max-width: $screen-sm-min) {
+        display: none;
+      }
+    }
+
+    .re-side-list {
       text-align: left;
       overflow: auto;
 
-      li {
+      .re-side-list-item {
         margin: .125rem 0;
 
         @media all and (max-width: $screen-sm-min) {
@@ -140,6 +165,7 @@
 
             @media all and (max-width: $screen-sm-min) {
               font-size: 0;
+              border-right: 3px solid $primary;
             }
 
             > i {
@@ -196,75 +222,67 @@
   }
 }
 
-#redeMenu > .active-li.active-li.active-li.active-li {
-  animation-play-state: running;
-}
-
-#redeMenu > li {
-  transform: translate(-100%);
-  animation: sections-nav-item 0.35s cubic-bezier(0.75, 0, 0.45, 1.1) forwards paused;
-}
-
-#redeMenu > li:nth-child(1n) {
-  animation-delay: 0.3s;
-}
-
-#redeMenu > li:nth-child(2n) {
-  animation-delay: 0.35s;
-}
-
-#redeMenu > li:nth-child(3n) {
-  animation-delay: 0.4s;
-}
-
-#redeMenu > li:nth-child(4n) {
-  animation-delay: 0.45s;
-}
-
-#redeMenu > li:nth-child(5n) {
-  animation-delay: 0.5s;
-}
-
-#redeMenu > li:nth-child(6n) {
-  animation-delay: 0.55s;
-}
-
-#redeMenu > li:nth-child(7n) {
-  animation-delay: 0.6s;
-}
-
-#redeMenu > li:nth-child(8n) {
-  animation-delay: 0.65s;
-}
-
-#redeMenu > li:nth-child(9n) {
-  animation-delay: 0.7s;
-}
-
-#redeMenu > li:nth-child(10n) {
-  animation-delay: 0.75s;
-}
-
-#redeMenu > li:nth-child(11n) {
-  animation-delay: 0.8s;
-}
-
-#redeMenu > li:nth-child(12n) {
-  animation-delay: 0.85s;
-}
-
-@-webkit-keyframes sections-nav-item {
-  0% {
-    transform: translate(-100%);
+#redeMenu {
+  > .active-li.active-li.active-li.active-li {
+    animation-play-state: running;
   }
 
-  to {
-    transform: translate(0);
+  > li {
+    transform: translate(-100%);
+    animation: sections-nav-item 0.35s cubic-bezier(0.75, 0, 0.45, 1.1) forwards paused;
+
+    &:nth-child(1n) {
+      animation-delay: 0.3s;
+    }
+
+    &:nth-child(2n) {
+      animation-delay: 0.35s;
+    }
+
+    &:nth-child(3n) {
+      animation-delay: 0.4s;
+    }
+
+    &:nth-child(4n) {
+      animation-delay: 0.45s;
+    }
+
+    &:nth-child(5n) {
+      animation-delay: 0.5s;
+    }
+
+    &:nth-child(6n) {
+      animation-delay: 0.55s;
+    }
+
+    &:nth-child(7n) {
+      animation-delay: 0.6s;
+    }
+
+    &:nth-child(8n) {
+      animation-delay: 0.65s;
+    }
+
+    &:nth-child(9n) {
+      animation-delay: 0.7s;
+    }
+
+    &:nth-child(10n) {
+      animation-delay: 0.75s;
+    }
+
+    &:nth-child(11n) {
+      animation-delay: 0.8s;
+    }
+
+    &:nth-child(12n) {
+      animation-delay: 0.85s;
+    }
   }
 }
 
 @keyframes sections-nav-item {
-  0% {
+  from {
     transform: translate(-100%);
   }
 

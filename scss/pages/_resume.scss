@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-/** –––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 //  Pages > Resume
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -10,14 +9,8 @@
 }
 
 .re-main-cnt {
-  hr {
-    border-bottom: 0;
-    height: 0;
-  }
-
   margin-left: 16rem;
   overflow: hidden;
-  float: left;
   width: calc(100% - 16rem);
 
   @media all and (max-width: $screen-sm-min) {
@@ -25,10 +18,14 @@
     width: calc(100% - 3rem);
   }
 
-  .re-about {
-    padding: 4rem 2rem;
+  hr {
+    border-bottom: 0;
+    height: 0;
+  }
 
-    // background: url("../dist/img/coded-stuff-screen.jpg");
+  .re-about {
+    position: relative;
+    padding: 4rem 2rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -39,7 +36,7 @@
       padding: 3rem 1.5rem;
     }
 
-    .side-img {
+    .re-side-img {
       cursor: pointer;
       display: none;
 
@@ -59,7 +56,7 @@
           width: 6rem;
         }
 
-        .side-img-container {
+        .re-side-img-container {
           background-size: cover;
           background-position: center top;
           position: absolute;
@@ -73,7 +70,7 @@
       }
     }
 
-    .about-cnt {
+    .re-about-cnt {
       @media all and (max-width: $screen-sm-min) {
         @include in-bk-mid;
 
@@ -95,7 +92,7 @@
       h1 {
         color: transparent;
         display: inline-block;
-        -webkit-text-stroke: 1px $primary;
+        -webkit-text-stroke: 1.5px $primary;
 
         // @include text-shadow-v1($shadow: $primary);
 
@@ -239,7 +236,7 @@
         top: 50%;
         background-color: $primary;
         opacity: .36;
-        height: 1px;
+        height: 2px;
         left: 3rem;
         width: calc(100% - 3rem);
       }
@@ -338,17 +335,18 @@
     margin-top: .75rem;
     overflow: hidden;
     background-color: $smoke;
-    border-radius: 0;
+    border-radius: 2px;
     box-shadow: none;
     line-height: inherit;
     height: inherit;
 
     .progress-bar {
       background-color: $primary;
+      border-radius: 4px;
       transition: width .6s ease;
       height: auto;
-      min-height: .375rem;
-      background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+      min-height: .5rem;
+      background-image: linear-gradient(45deg, rgba($white, 0.16) 25%, transparent 25%, transparent 50%, rgba($white, 0.16) 50%, rgba($white, 0.16) 75%, transparent 75%, transparent);
       background-size: 1rem 1rem;
     }
   }
@@ -397,7 +395,7 @@
         }
 
         h5 {
-          color: $primary;
+          color: darken($primary, 12);
           font-size: 1.125rem;
           margin-top: .75rem;
         }
@@ -442,7 +440,10 @@
   }
 
   .contact-form {
+    position: relative;
+
     .contact-img {
+
       margin-bottom: 2rem;
       background-color: darken($primary, 10%);
       border-radius: 4px;

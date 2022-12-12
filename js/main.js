@@ -115,27 +115,25 @@
         // wdaCoueseFront
         $('#wdaCoueseFront').on('click', function() {
           portfolio.fire({
-            html: 
-              '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 1.jpg" alt="wdaCouese">' +
+            html: '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 1.jpg" alt="wdaCouese">' +
               '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 2.jpg" alt="wdaCouese">' +
               '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 3.jpg" alt="wdaCouese">' +
               '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 4.jpg" alt="wdaCouese">' +
               '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 5.jpg" alt="wdaCouese">' +
               '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 6.jpg" alt="wdaCouese">' +
-              '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 7.jpg" alt="wdaCouese">' ,
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - frontend - wdaCourse - 7.jpg" alt="wdaCouese">',
           })
         });
         // wdaCoueseBackend
         $('#wdaCoueseBackend').on('click', function() {
           portfolio.fire({
-            html: 
-              '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 1.jpg" alt="wdaCouese">' +
+            html: '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 1.jpg" alt="wdaCouese">' +
               '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 2.jpg" alt="wdaCouese">' +
               '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 3.jpg" alt="wdaCouese">' +
               '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 4.jpg" alt="wdaCouese">' +
               '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 5.jpg" alt="wdaCouese">' +
               '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 6.jpg" alt="wdaCouese">' +
-              '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 7.jpg" alt="wdaCouese">' ,
+              '<img class="img-responsive" src="dist/img/portfollo/Landing - backend - wdaCourse - 7.jpg" alt="wdaCouese">',
           })
         });
         $('#taiwanJobs').on('click', function() {
@@ -243,20 +241,28 @@
             showConfirmButton: false,
           })
         });
-      });
 
-      $(window).on('load', function(e) {
-        $('#logo_loader').fadeOut();
-
-        $('.about-cnt h1').addClass('ani-type');
-
-        $('#redeMenu li').addClass('active-li');
 
         AOS.init({
           easing: 'ease-out-back',
-          duration: 1000,
-          offset: 100,
+          duration: 250,
+          offset: 50,
         });
+        
+      });
+
+      $(window).on('load', function(e) {
+
+        setTimeout(() => {
+        $('#logo_loader').fadeOut();
+        }, 2500);
+
+        // $('#logo_loader').fadeOut();
+
+        $('.re-about-cnt h1').addClass('ani-type');
+
+        $('#redeMenu li').addClass('active-li');
+
 
       });
 
@@ -266,13 +272,13 @@
 
       filterList: function() {
 
-        $('#portfoliolist').mixItUp({
+        $('#portfolioList').mixItUp({
           selectors: {
-            target: '.portfolio',
-            filter: '.filter'
+            target: '.portfolio-item',
+            filter: '.filter-item'
           },
           load: {
-            filter: 'all' // show app tab on first load
+            filter: 'all'
           },
         });
       },
