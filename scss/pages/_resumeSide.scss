@@ -9,7 +9,7 @@
   height: 100%;
   background-color: darken($black, 2.5%);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23091C33' stroke-width='2.35' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
-  box-shadow: 6px 16px 32px -18px $lightgrey;
+  box-shadow: .75rem 1rem 1.5rem rgba(darken($primary , 20), 0.24);
   color: $white;
   text-transform: capitalize;
   z-index: 2;
@@ -99,12 +99,12 @@
       margin-bottom: 2rem;
       display: inline-block;
       color: $white;
-      background-color: darken($primary, 10);
+      background-color: rgba(darken($primary, 10), 0.80);
       font-weight: 900;
       border: 2px dashed darken($dark, 0);
-      border-radius: 4px;
+      border-radius: 2px;
       letter-spacing: 1.5px;
-      padding: 0.5rem 1rem;
+      padding: 0.375rem 1rem;
 
       @media all and (max-width: $screen-sm-min) {
         display: none;
