@@ -40,6 +40,9 @@
         // filterList
         $.Main.components.filterList();
 
+        // buildCopy
+        $.Main.components.buildCopy('.js-copy');
+
         // Set Background Image Dynamically
         if ($('[data-bg-img-src]').length)
           $.Main.helpers.bgImage($('[data-bg-img-src]'));
@@ -248,13 +251,13 @@
           duration: 250,
           offset: 50,
         });
-        
+
       });
 
       $(window).on('load', function(e) {
 
         setTimeout(() => {
-        $('#logo_loader').fadeOut();
+          $('#logo_loader').fadeOut();
         }, 2500);
 
         // $('#logo_loader').fadeOut();
@@ -269,9 +272,143 @@
     },
 
     components: {
+      buildCopy: function(element) {
+        const copyDivs = document.querySelectorAll(element);
+        if (copyDivs.length > 0) {
+          console.log("FOUND " + copyDivs.length + " C0PY ELEMENTS");
+          let cssTip = "js-tooltip-cy";
+          let cssTipText = "js-tooltip-cy-text";
+          let iconClass = "js-tooltip-cy-icon";
+          let iconBoxClass = "js-tooltip-cy-svg-icon";
+
+          let css = `
+          .${cssTip} {
+              position: relative;
+              cursor: pointer;
+              display: inline-flex;
+              transition: .25s all ease;    
+              margin: 0 0.25rem;
+              filter: hue-rotate(45deg)
+          }
+          .${cssTip} .${cssTipText} {
+              visibility: hidden;
+              min-width: max-content;
+              background-color: black;
+              color: whitesmoke;
+              font-size: 0.75rem;
+              text-align: center;
+              border-radius: 0.375rem;
+              padding: 0.25rem 0.5rem;
+              position: absolute;
+              top: 0%;
+              left: 50%;
+              transform: translateX(-50%);
+              word-wrap: break-word;
+              opacity: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;    
+              transition: .25s all ease;
+              visibility: hidden;
+              pointer-events: none;
+              z-index: 1;
+          }
+          .${cssTip} .${cssTipText}::after {
+              content: "";
+              display: flex;
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              border-width: 0.25rem;
+              border-style: solid;
+              border-color: black transparent transparent transparent;
+          }
+          .${cssTip}:hover .${cssTipText}  {
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+            transform: translate(-50%,-100%) scale(1);
+            left: 50%;
+          }
+        `;
+
+          let style = document.createElement('style');
+
+          if (style.styleSheet) {
+            style.styleSheet.cssText = css;
+          } else {
+            style.appendChild(document.createTextNode(css));
+          }
+
+          document.getElementsByTagName('head')[0].appendChild(style);
+
+          for (i = 0; i < copyDivs.length; ++i) {
+            const createTooltipDiv = document.createElement('div');
+            createTooltipDiv.classList.add(cssTip);
+            copyDivs[i].parentNode.insertBefore(createTooltipDiv, copyDivs[i].nextSibling);
+            const tooltipDiv = document.getElementsByClassName(cssTip)[i];
+            let iconStroke = 'currentColor';
+            let strokeWidth = 1.5;
+            if (copyDivs[i].dataset.clipboardIconStroke) {
+              iconStroke = copyDivs[i].dataset.clipboardIconStroke;
+            }
+            if (copyDivs[i].dataset.clipboardIconStrokeWidth) {
+              strokeWidth = copyDivs[i].dataset.clipboardIconStrokeWidth;
+            }
+
+            let clipboardImgSource = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="8" y="8" width="12" height="12" rx="2" /><path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" /></svg>';
+            let div = document.createElement('i');
+            div.className = iconBoxClass;
+            div.innerHTML = clipboardImgSource;
+            tooltipDiv.appendChild(div);
+            let clipboardImg = div.firstElementChild;
+            clipboardImg.classList.add(iconClass);
+
+            clipboardImg.style.width = 20;
+            clipboardImg.style.height = 20;
+            clipboardImg.style.stroke = iconStroke;
+            clipboardImg.style.strokeWidth = strokeWidth;
+            const createTooltipText = document.createElement('span');
+            createTooltipText.classList.add(cssTipText);
+            createTooltipText.innerHTML = "COPY";
+
+            tooltipDiv.appendChild(createTooltipText);
+
+            const text = copyDivs[i].innerHTML;
+            const element = document.getElementsByClassName(cssTipText)[i];
+
+            document.getElementsByClassName(iconClass)[i].addEventListener("click", function() {
+              copyToClipboard(text, element)
+            }, false);
+
+            function copyToClipboard(text, element) {
+
+              if (window.clipboardData && window.clipboardData.setData) {
+                return clipboardData.setData("Text", text);
+              } else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+                let textarea = document.createElement("textarea");
+                textarea.textContent = text;
+                textarea.style.position = "fixed";
+                document.body.appendChild(textarea);
+                textarea.select();
+                try {
+                  return document.execCommand("copy");
+                } catch (ex) {
+                  console.warn("COPY TO CLIPBOARD FAILED.", ex);
+                  element.innerHTML = "FAILED TO COPY";
+                  return false;
+                } finally {
+                  document.body.removeChild(textarea);
+                  element.innerHTML = "COPIED!";
+                  console.log("COPIED: " + text);
+                }
+              }
+            }
+          }
+        }
+      },
 
       filterList: function() {
-
         $('#portfolioList').mixItUp({
           selectors: {
             target: '.portfolio-item',
@@ -292,13 +429,6 @@
 
 
       },
-      /**
-       * Sets background-image dynamically.
-       *
-       * @param jQuery collection
-       *
-       * @return jQuery|undefined
-       */
       bgImage: function(collection) {
 
         if (!collection || !collection.length) return;
@@ -314,11 +444,6 @@
 
       },
 
-      /**
-       * Extends basic jQuery functionality
-       *
-       * @return undefined
-       */
       extendjQuery: function() {
 
         $.fn.extend({
@@ -358,13 +483,6 @@
         });
 
       },
-
-
-      /**
-       * Detect Internet Explorer (IE)
-       *
-       * @return version of IE or false, if browser is not Internet Explorer
-       */
 
       detectIE: function() {
 
