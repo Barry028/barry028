@@ -17,6 +17,7 @@
   animation: splash 2s ease-in forwards;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
+  overflow: hidden;
 
   // &:before {
   //   content: '';
