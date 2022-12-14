@@ -17,19 +17,24 @@
           html: true,
           content: `<ul id="plugin" class="ml-12 pt-8">
           <li>
-            <b>1.</b> 常用類型：彈窗組件、延遲加載 <font class="text--lightgrey">(lazyload)</font>、無限滾動、滾動觸發動畫組件、暗黑模式切換<font class="text--lightgrey">(搭配 Scss & Css Variables)</font>、Go Top 組件、Youtube 截圖、數字三位一撇
+            <b>1.</b> 
+            常用類型：彈窗組件、延遲加載 <font class="text--lightgrey">(lazyload)</font>、無限滾動、滾動觸發動畫組件、暗黑模式切換<font class="text--lightgrey">(搭配 Scss & Css Variables)</font>、Go Top 組件、Youtube 截圖、數字三位一撇
           </li>
           <li>
-            <b>2.</b> 佈局類型：滾動黏性盒子組件、自動產生監聽導航選單、Drowdown Menu 組件、產生代圖以及文字<font class="text--lightgrey">(用於大頭照｜Layout 說明)</font>
+            <b>2.</b> 
+            佈局類型：滾動黏性盒子組件、自動產生監聽導航選單、Drowdown Menu 組件、產生代圖以及文字<font class="text--lightgrey">(用於大頭照｜Layout 說明)</font>
           </li>
           <li>
-            <b>3.</b> 訊息類型：吐司訊息組件、通知訊息組件
+            <b>3.</b> 
+            訊息類型：吐司訊息組件、通知訊息組件
           </li>
           <li>
-            <b>4.</b> 輸入類型：兩層複選選單 <font class="text--lightgrey">(傳入 json 並且指定 第一、二層的 obj.name 值)</font>
+            <b>4.</b> 
+            輸入類型：兩層複選選單 <font class="text--lightgrey">(傳入 json 並且指定 第一、二層的 obj.name 值)</font>
           </li>
           <li>
-            <b>5.</b> 表單類型：輸入框遮罩、計算輸入框字數、Table 排序、視覺化編輯表單、即時上傳圖片
+            <b>5.</b> 
+            表單類型：輸入框遮罩、計算輸入框字數、Table 排序、視覺化編輯表單、即時上傳圖片
           </li>
         </ul>`
         });

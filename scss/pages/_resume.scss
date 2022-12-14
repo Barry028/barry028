@@ -46,6 +46,7 @@
 
       @media all and (max-width: $screen-sm-min) {
         @include in-bk-mid;
+
         width: 12rem;
 
         &:before {
@@ -71,6 +72,7 @@
       @media all and (max-width: $screen-xs-min) {
         width: 6rem;
       }
+
       @media all and (max-width: 410px) {
         width: 6rem;
         margin-bottom: 1rem;
@@ -89,6 +91,7 @@
       @media all and (max-width: $screen-xs-min) {
         width: calc(100% - 6rem);
       }
+
       @media all and (max-width: 410px) {
         width: calc(100% - 0px);
       }
@@ -189,7 +192,16 @@
     @extend %clearfix;
 
     @media all and (max-width: $screen-sm-min) {
-      padding: 0 1.5rem;
+      font-size: 0;
+      padding: 0 1rem;
+    }
+
+    .col-md-6 {
+      @media all and (max-width: $screen-sm-min) {
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+      }
     }
   }
 
