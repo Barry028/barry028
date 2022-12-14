@@ -10,15 +10,8 @@
 
 // @include text-comic($color: $dark);
 @mixin text-comic($color: $dark) {
-  text-shadow: -1px -1px 0 $color, 0 -1px 0 $color, 1px -1px 0 $color,
-    -1px 0 0 $color, 1px 0 0 $color, -1px 1px 0 $color, 0 1px 0 $color,
-    1px 1px 0 $color, -2px -2px 0 $color, -1px -2px 0 $color, 0 -2px 0 $color,
-    1px -2px 0 $color, 2px -2px 0 $color, 2px -1px 0 $color, 2px 0 0 $color,
-    2px 1px 0 $color, 2px 2px 0 $color, 1px 2px 0 $color, 0 2px 0 $color,
-    -1px 2px 0 $color, -2px 2px 0 $color, -2px 1px 0 $color, -2px 0 0 $color,
-    -2px -1px 0 $color;
+  text-shadow: -1px -1px 0 $color, 0 -1px 0 $color, 1px -1px 0 $color, -1px 0 0 $color, 1px 0 0 $color, -1px 1px 0 $color, 0 1px 0 $color, 1px 1px 0 $color, -2px -2px 0 $color, -1px -2px 0 $color, 0 -2px 0 $color, 1px -2px 0 $color, 2px -2px 0 $color, 2px -1px 0 $color, 2px 0 0 $color, 2px 1px 0 $color, 2px 2px 0 $color, 1px 2px 0 $color, 0 2px 0 $color, -1px 2px 0 $color, -2px 2px 0 $color, -2px 1px 0 $color, -2px 0 0 $color, -2px -1px 0 $color;
 }
-
 
 .re-main-cnt {
   margin-left: 16rem;
@@ -53,7 +46,6 @@
 
       @media all and (max-width: $screen-sm-min) {
         @include in-bk-mid;
-
         width: 12rem;
 
         &:before {
@@ -61,10 +53,6 @@
           padding: 100% 0 0;
           display: block;
           width: 100%;
-        }
-
-        @media all and (max-width: $screen-xs-min) {
-          width: 6rem;
         }
 
         .re-side-img-container {
@@ -79,6 +67,15 @@
           border: 2px solid $white;
         }
       }
+
+      @media all and (max-width: $screen-xs-min) {
+        width: 6rem;
+      }
+      @media all and (max-width: 410px) {
+        width: 6rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+      }
     }
 
     .re-about-cnt {
@@ -91,6 +88,9 @@
 
       @media all and (max-width: $screen-xs-min) {
         width: calc(100% - 6rem);
+      }
+      @media all and (max-width: 410px) {
+        width: calc(100% - 0px);
       }
 
       .ani-type {
@@ -460,7 +460,6 @@
     position: relative;
 
     .contact-img {
-
       margin-bottom: 2rem;
       background-color: darken($primary, 10%);
       border-radius: 4px;
