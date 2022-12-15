@@ -1,1 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" aria-label="npm" viewBox="0 0 512 512"><rect width="512" height="512" fill="#fff" rx="15%"/><path fill="none" stroke="#cb3837" stroke-width="22" d="M166 333h90m146-101v68m-45-68v68m-112-68v45m-11 34h213V199H65v112h113V210m-45 22v68m157-90v90"/></svg>
+<svg id="npm" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect id="Rectangle_107195" data-name="Rectangle 107195" width="512" height="512" rx="76.8" fill="#fff"/>
+  <path id="Path_207301" data-name="Path 207301" d="M166,333h90M402,232v68m-45-68v68M245,232v45m-11,34H447V199H65V311H178V210m-45,22v68m157-90v90" fill="none" stroke="#cb3837" stroke-width="22"/>
+</svg>
